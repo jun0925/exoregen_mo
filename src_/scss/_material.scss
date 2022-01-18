@@ -1,0 +1,180 @@
+@import "_var.scss";
+
+.material-page {
+    margin-top: $headerResetMargin;
+}
+
+/*material list */
+.material-page .section-material {
+    margin-bottom: $margin55px;
+
+    .material-top {
+        text-align: center;
+        margin-bottom: 30px;
+
+        h2 {
+            font: {
+                size:2.4rem;
+                weight: $fw-normal;
+            }
+            padding-bottom: 30px;
+        }
+
+        .material-search {
+            @include searchInput();
+        }
+    }
+
+    .material-cont {
+        padding-top: 30px;
+        
+        h3 {
+            font-size: 1.5rem;
+            margin-bottom: 30px;
+        }
+
+        .material-list {
+            margin-bottom: 30px;
+            li {
+                padding: 20px 0;
+                border-bottom: $border-wtGray;
+
+                &:first-child {
+                    padding-top: 0;
+                }
+
+                &:last-child {
+                    border-bottom: 0;
+                }
+
+                a {
+                    &.material-name {
+                        font: {
+                            size: 1.5rem;
+                            weight: $fw-light;
+                        }
+                    }
+                    
+                    &.download-btn {
+                        @include downloadBtn();
+                        float: right;
+                    }
+                }
+            }
+        }
+
+        .circle-btn {
+            @include circleBtn($purple) {
+                margin: 0 auto;
+            }
+        }
+    }
+}
+/*...material list */
+
+/*material detail */
+.material-page .section-material-detail {
+    margin-bottom: $margin55px;
+    .material-top {
+        text-align: center;
+        margin-bottom: 30px;
+        h2 {
+            font: {
+                size:2.4rem;
+                weight: $fw-normal;
+            }
+            padding-bottom: 30px;
+            border-bottom: $border-black;
+        }
+    }
+
+    .material-cont {
+        margin-bottom: $margin55px;
+        h3,
+        p {
+            text-align: center;
+        }
+
+        &-tit {
+            font: {
+                size: 1.8rem;
+                weight: $fw-normal;
+            }
+            margin-bottom: 20px;
+        }
+
+        &-date {
+            @include newsDate(){
+                margin-bottom: 30px;
+            };
+        }
+
+        &-img {
+            margin-bottom: 30px;
+        }
+
+        &-subject {
+            @include contDescription();
+        }
+    }
+
+    .file-list {
+        padding: 0 10px;
+        margin-bottom: $margin55px;
+        .file {
+            border-bottom: $border-wtGray;
+            padding: 20px 0;
+
+            &:first-child {
+                padding-top: 0;
+            }
+
+            &:last-child {
+                border-bottom: 0;
+            }
+
+            &:after {
+                content: " ";
+                display: block;
+                clear: both;
+            }
+
+            &-left {
+                float: left;
+            }
+
+            &-right {
+                float: right;
+            }
+            
+            .download-btn {
+                @include downloadBtn();
+                float: left;
+                margin-right: 10px;
+            }
+
+            span {
+                font: {
+                    size: 1.5rem;
+                    weight: $fw-light;
+                }
+            }
+
+            &-check-btn {
+                width: 13px;
+                opacity: $opacity6;
+                margin-left: 10px;
+            }
+            
+        }
+    }
+
+    .other-file-wrap {
+        @include otherLinkList();
+    }
+
+    .circle-btn {
+        @include circleBtn($purple) {margin: 0 auto;}
+    }
+}
+/*...material detail */

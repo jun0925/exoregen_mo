@@ -1,0 +1,86 @@
+@import "_var.scss";
+
+.hof-detail-page {
+    margin-top: 109px;
+}
+
+#hof-detail .hof-detail-section {
+    margin-bottom: $margin55px;
+    
+    .cont-tit-wrap {
+        @include subContTit($titMargin:null);
+    }
+
+    .hof-cont-wrap {
+        .hof {
+            &-top {
+                text-align: center;
+                margin-bottom: 25px;
+            }
+
+            &-name {
+                font-size: 2.4rem;
+                font-weight: $fw-bold;
+                margin-bottom: 20px;
+            }
+
+            &-date {
+                font-size: 9px;
+                font-weight: $fw-light;
+                color: $gray;
+                margin-bottom: 30px;
+            }
+
+            &-img {
+                width: 50%;
+                margin: 0 auto;
+                margin-bottom: 25px;
+
+                img {border-radius: 50%;}
+            }
+
+            &-greeting {
+                font-size: 1.8rem;
+                line-height: 1.33;
+                margin-bottom: 25px;
+            }
+
+            &-num {
+                font-size: 9px;
+                font-weight: $fw-light;
+                color: $gray;
+                margin-bottom: 30px;
+            }
+        }
+        
+        .go-join-btn {
+            @include squareBtn($purple);
+            margin: 0 auto;
+        }
+
+        .hof-cont {
+            margin-bottom: $margin55px;
+
+            p {
+                font-size: 1.5rem;
+                font-weight: $fw-light;
+                line-height: 1.4;
+            }
+
+            .sample {
+                width: 100%;
+                height: 270px;
+                background: #3d3d3d;
+                margin: 25px 0; 
+            }
+        }
+
+        .other-news-wrap {
+            @include otherLinkList();
+        }
+    
+        .circle-btn {
+            @include circleBtn($purple){margin: 0 auto;};
+        }
+    }
+}

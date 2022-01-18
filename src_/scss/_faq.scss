@@ -1,0 +1,85 @@
+@import "_var.scss";
+
+.faq-page {
+    margin-top: $headerResetMargin;
+}
+
+.faq-page .faq-top {
+    @include subTopText();
+    .square-btn {
+        @include squareBtn($black);
+        margin-bottom: 20px;
+    }
+
+    .faq-search {
+        @include searchInput();
+    }
+}
+
+.faq-page .faq-cont {
+    margin-bottom: $margin55px;
+    
+    .faq-list {
+        margin-bottom: $margin55px;
+    }
+    .faq {
+        border-bottom: $border-wtGray;
+        transition: all 0.3s;
+        padding: {
+            top: 25px;
+            left: 10px;
+            right: 10px;
+        };
+
+        &.faq-open {
+            background: $whiteGray;
+
+            .faq-q:after {
+                background-image: url($imgurl + "icon/arrow-up.png");
+            }
+        }
+
+        &>div {
+            padding-bottom: 25px;
+
+            .flex {@include flex(null,null)}
+            &.faq-q {
+                position: relative;
+
+                &:after {
+                    content: " ";
+                    display: block;
+                    width: 14px;
+                    height: 11px;
+                    background-repeat: no-repeat;
+                    background-size: 100% 100%;
+                    background-image: url($imgurl + "icon/arrow-down.png");
+                    @include position(absolute, 5px, null, null, 0);
+                }
+            }
+
+            &.faq-a {
+                display: none;
+            }
+
+            span {
+                vertical-align: middle;
+                font-size: 1.5rem;
+
+                &.bold {
+                    font-weight: $fw-bold;
+                    line-height: 1.5;
+                    margin-right: 5px;
+                }
+
+                &.faq-txt {
+                    @include contDescription();
+                }
+            }
+        }
+    }
+
+    .circle-btn {
+        @include circleBtn($purple){margin: 0 auto;}
+    }
+}

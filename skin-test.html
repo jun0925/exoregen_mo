@@ -1,0 +1,761 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1.0, maximum-scale=10, minimum-scale=0, user-scalable=yes">
+    <title>EXOREGEN</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;700;800&family=Noto+Sans+KR:wght@100;300;400;500;700&display=swap&family=Roboto:wght@300;400;500;700&display=swap"
+        rel="stylesheet">
+
+    <link type="text/css" href="/src/libs_/swiper.css" rel="stylesheet" />
+    <link type="text/css" href="/src/css/default.css" rel="stylesheet" />
+    <link type="text/css" href="/src/css/common.css" rel="stylesheet" />
+    <link href="/img_/favicon/favicon.ico" type="image/x-icon" rel="shortcut icon">
+    <script src="src/js/common.js" type="text/javascript"></script>
+</head>
+
+<body id="skinTest">
+    <!-------HEADER------->
+    <header>
+        <article class="hd-top">
+            <h1>
+                <a href="/" class="logo">
+                    엑소리젠
+                </a>
+            </h1>
+            <div class="menu-btn">
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+        </article>
+        <article class="nav-box">
+            <nav>
+                <ul class="nav-list">
+                    <!-- BRAND  -->
+                    <li>
+                        <a href="#none" class="sub-nav-open-btn">BRAND</a>
+                        <ul class="sub-nav">
+                            <li>
+                                <a href="/brand01.html">엑소리젠 탄생</a>
+                            </li>
+                            <li>
+                                <a href="/brand02.html">엑소리젠 핵심소재</a>
+                            </li>
+                            <li>
+                                <a href="/brand03.html">엑소리젠 효능소재</a>
+                            </li>
+                            <li>
+                                <a href="/brand04.html">특허 기술력</a>
+                            </li>
+                            <li>
+                                <a href="/brand05.html">스위스 처방전</a>
+                            </li>
+                            <li>
+                                <a href="/brand06.html">대한 피부과학 연구소</a>
+                            </li>
+                            <li>
+                                <a href="/brand-tv.html">방송출연</a>
+                            </li>
+                            <li>
+                                <a href="/brand-video.html">엑소리젠 영상</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <!-- PRODUCTS -->
+                    <li>
+                        <a href="#none" class="sub-nav-open-btn">PRODUCTS</a>
+                        <ul class="sub-nav">
+                            <li>
+                                <a href="/product-detail.html">세럼 투 폼 버블 클렌저</a>
+                            </li>
+                            <li>
+                                <a href="/product-detail.html">스피디 듀얼 마스크</a>
+                            </li>
+                            <li>
+                                <a href="/product-detail.html">트웬티스 엑소바이옴 71</a>
+                            </li>
+                            <li>
+                                <a href="/product-detail.html">스팟 라이트 코렉터</a>
+                            </li>
+                            <li>
+                                <a href="/product-detail.html">펜타 엑소 래디언스 크림</a>
+                            </li>
+                            <li>
+                                <a href="/product-detail.html">퍼플 파워 멀티 밤</a>
+                            </li>
+                            <li>
+                                <a href="/product-detail.html">모이스트 커버비비</a>
+                            </li>
+                            <li>
+                                <a href="/product-detail.html">나이트 부스트 세럼</a>
+                            </li>
+                            <li>
+                                <a href="/product-detail.html">페이스 리파이닝 앰플</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <!-- HOW TO USE-->
+                    <li>
+                        <a href="#none" class="sub-nav-open-btn">HOW TO USE</a>
+                        <ul class="sub-nav">
+                            <li>
+                                <a href="/howtouse01.html">제품 사용법</a>
+                            </li>
+                            <li>
+                                <a href="/howtouse02.html">스킨케어 순서</a>
+                            </li>
+                            <li>
+                                <a href="/howtouse03.html">피부타입 테스트</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#none" class="sub-nav-open-btn">SUPPORTERS</a>
+                        <ul class="sub-nav">
+                            <li>
+                                <a href="/supporters01.html">미인협회</a>
+                            </li>
+                            <li>
+                                <a href="#none" class="close">연예인</a>
+                            </li>
+                            <li>
+                                <a href="#none" class="close">유명인</a>
+                            </li>
+                            <li>
+                                <a href="#none" class="close">인플루언서</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#none" class="sub-nav-open-btn">NEWS</a>
+                        <ul class="sub-nav">
+                            <li>
+                                <a href="/event.html">이벤트</a>
+                            </li>
+                            <li>
+                                <a href="/news.html">언론뉴스</a>
+                            </li>
+                            <li>
+                                <a href="/news.html">행사진행</a>
+                            </li>
+                            <li>
+                                <a href="/awards.html">수상내역</a>
+                            </li>
+                            <li>
+                                <a href="/hof.html">명예의 전당</a>
+                            </li>
+                            <li>
+                                <a href="/regen_people.html">리젠피플</a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+            <!--join,login btn-->
+            <div class="btn-wrap">
+                <a href="/wtc.html" class="btn">
+                    오시는길
+                    <img src="/img_/icon/link-arrow.png" alt="회원가입 이동" class="next-btn" />
+                </a>
+                <a href="/join00.html" class="btn">
+                    가입하기
+                    <img src="/img_/icon/link-arrow.png" alt="회원가입 이동" class="next-btn" />
+                </a>
+                <a href="/login.html" class="btn">
+                    로그인
+                    <img src="/img_/icon/link-arrow.png" alt="로그인 이동" class="next-btn" />
+                </a>
+            </div>
+        </article>
+    </header>
+    <!-------...HEADER------->
+
+    <!-------MAIN------->
+    <main class="skin-test">
+        <ul class="fix-btn-list">
+            <!--<li class="fix-btn">
+                <a href="#none">
+                    <img src="/img_/icon/counseling.png" alt="실시간 상담" />
+                </a>
+            </li>-->
+            <li class="fix-btn top-btn">
+                <a href="#none">
+                    TOP
+                </a>
+            </li>
+        </ul>
+        <!-- section cont -->
+        <section class="section-test">
+            <article class="section-inner">
+                <div class="cont-tit-wrap">
+                    <h2>피부타입 테스트</h2>
+                </div>
+            </article>
+            <div class="test-wrap">
+                <article class="section-inner">
+                    <div class="paging-wrap">
+                        <div class="paging-num">
+                            <span class="now-page">1</span>
+                            <span>/</span>
+                            <span class="all-page"></span>
+                        </div>
+                    </div>
+                    <form action="">
+                        <div class="test-box">
+                            <div class="test test1 show">
+                                <div class="test-qs">
+                                    메이크업을 하고 2~3시간 후 <br>
+                                    당신의 화장 상태는 어떤가요?
+                                </div>
+                                <ul class="test-ex">
+                                    <li>
+                                        <label for="test1-1">
+                                            <input type="radio" name="test1" id="test1-1">
+                                            각질이 일어나있거나<br>
+                                            주름이사이에 끼어있다
+                                        </label>
+                                    </li>
+                                    <li>
+                                        <label for="test1-2">
+                                            <input type="radio" name="test1" id="test1-2">
+                                            매끈하다
+                                        </label>
+                                    </li>
+                                    <li>
+                                        <label for="test1-3">
+                                            <input type="radio" name="test1" id="test1-3">
+                                            윤기가 흐른다
+                                        </label>
+                                    </li>
+                                    <li>
+                                        <label for="test1-4">
+                                            <input type="radio" name="test1" id="test1-4">
+                                            윤기와 함께 많이 번들거린다
+                                        </label>
+                                    </li>
+                                    <li>
+                                        <label for="test1-5">
+                                            <input type="radio" name="test1" id="test1-5">
+                                            메이크업을 안한다
+                                        </label>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="test test2">
+                                <div class="test-qs">
+                                    운동,스트레스,음주,자극적인 음식 섭취에 의해
+                                    얼굴과 목이 붉어지나요?
+                                </div>
+                                <ul class="test-ex">
+                                    <li>
+                                        <label for="test2-1">
+                                            <input type="radio" name="test2" id="test2-1">
+                                            전혀 그런적 없다
+                                        </label>
+                                    </li>
+                                    <li>
+                                        <label for="test2-2">
+                                            <input type="radio" name="test2" id="test2-2">
+                                            때때로 그렇다
+                                        </label>
+                                    </li>
+                                    <li>
+                                        <label for="test2-3">
+                                            <input type="radio" name="test2" id="test2-3">
+                                            자주 그렇다
+                                        </label>
+                                    </li>
+                                    <li>
+                                        <label for="test2-4">
+                                            <input type="radio" name="test2" id="test2-4">
+                                            항상 그렇다
+                                        </label>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="test test3">
+                                <div class="test-qs">
+                                    클렌저 사용 후 당신의 얼굴 피부 상태는 어떤가요?
+                                </div>
+                                <ul class="test-ex">
+                                    <li>
+                                        <label for="test3-1">
+                                            <input type="radio" name="test3" id="test3-1">
+                                            건조하거나 갈라지는 느낌이 든다
+                                        </label>
+                                    </li>
+                                    <li>
+                                        <label for="test3-2">
+                                            <input type="radio" name="test3" id="test3-2">
+                                            약간 건조하다
+                                        </label>
+                                    </li>
+                                    <li>
+                                        <label for="test3-3">
+                                            <input type="radio" name="test3" id="test3-3">
+                                            정상적인 느낌이다
+                                        </label>
+                                    </li>
+                                    <li>
+                                        <label for="test3-4">
+                                            <input type="radio" name="test3" id="test3-4">
+                                            기름기 있는 느낌이다
+                                        </label>
+                                    </li>
+                                    <li>
+                                        <label for="test3-5">
+                                            <input type="radio" name="test3" id="test3-5">
+                                            클랜저를 사용하지 않는다
+                                        </label>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="test test4">
+                                <div class="test-qs">
+                                    보습제를 사용하지 않아도 얼굴 피부는 촉촉한가요?
+                                </div>
+                                <ul class="test-ex">
+                                    <li>
+                                        <label for="test4-1">
+                                            <input type="radio" name="test4" id="test4-1">
+                                            항상 그렇다
+                                        </label>
+                                    </li>
+                                    <li>
+                                        <label for="test4-2">
+                                            <input type="radio" name="test4" id="test4-2">
+                                            때때로 그렇다
+                                        </label>
+                                    </li>
+                                    <li>
+                                        <label for="test4-3">
+                                            <input type="radio" name="test4" id="test4-3">
+                                            거의 그렇지 않다
+                                        </label>
+                                    </li>
+                                    <li>
+                                        <label for="test4-4">
+                                            <input type="radio" name="test4" id="test4-4">
+                                            전혀 그렇지 않다
+                                        </label>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="test test5">
+                                <div class="test-qs">
+                                    얼굴에 모공이 있나요?
+                                </div>
+                                <ul class="test-ex">
+                                    <li>
+                                        <label for="test5-1">
+                                            <input type="radio" name="test5" id="test5-1">
+                                            전혀 없다
+                                        </label>
+                                    </li>
+                                    <li>
+                                        <label for="test5-2">
+                                            <input type="radio" name="test5" id="test5-2">
+                                            거의 없다
+                                        </label>
+                                    </li>
+                                    <li>
+                                        <label for="test5-3">
+                                            <input type="radio" name="test5" id="test5-3">
+                                            때때로 있다
+                                        </label>
+                                    </li>
+                                    <li>
+                                        <label for="test5-4">
+                                            <input type="radio" name="test5" id="test5-4">
+                                            항상 있다
+                                        </label>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="test test6">
+                                <div class="test-qs">
+                                    얼굴의 T존(이마와 코)에 기름기가 있나요?
+                                </div>
+                                <ul class="test-ex">
+                                    <li>
+                                        <label for="test6-1">
+                                            <input type="radio" name="test6" id="test6-1">
+                                            전혀 없다
+                                        </label>
+                                    </li>
+                                    <li>
+                                        <label for="test6-2">
+                                            <input type="radio" name="test6" id="test6-2">
+                                            때때로 있다
+                                        </label>
+                                    </li>
+                                    <li>
+                                        <label for="test6-3">
+                                            <input type="radio" name="test6" id="test6-3">
+                                            자주 있다
+                                        </label>
+                                    </li>
+                                    <li>
+                                        <label for="test6-4">
+                                            <input type="radio" name="test6" id="test6-4">
+                                            항상 있다
+                                        </label>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="test test7">
+                                <div class="test-qs">
+                                    보습제를 바른 뒤 2~3시간 후 양 볼은 어떤가요?
+                                </div>
+                                <ul class="test-ex">
+                                    <li>
+                                        <label for="test7-1">
+                                            <input type="radio" name="test7" id="test7-1">
+                                            매우 거칠며 각질이 일어난다
+                                        </label>
+                                    </li>
+                                    <li>
+                                        <label for="test7-2">
+                                            <input type="radio" name="test7" id="test7-2">
+                                            매끄럽다
+                                        </label>
+                                    </li>
+                                    <li>
+                                        <label for="test7-3">
+                                            <input type="radio" name="test7" id="test7-3">
+                                            약간 윤기가 흐른다
+                                        </label>
+                                    </li>
+                                    <li>
+                                        <label for="test7-4">
+                                            <input type="radio" name="test7" id="test7-4">
+                                            윤기가 흐르고 번들거린다
+                                        </label>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </form>
+                    <div class="btn-wrap">
+                        <button class="test-prev-btn">
+                            <img src="/img_/icon/link-prev-arrow.png" class="prev-btn" alt="이전">
+                            이전
+                        </button>
+                    </div>
+                </article>
+            </div>
+
+            <div class="test-form-wrap">
+                <article class="section-inner">
+                    <p class="test-form-guide">
+                        마지막으로 정확한 진단을 위한 <br />
+                        필요한 정보를 입력하고 <br />
+                        지금 바로 테스트 결과를 확인하세요.
+                    </p>
+                    <form>
+                        <div class="test-form-box">
+                            <div class="test-form">
+                                <label for="skinTestName">이름</label>
+                                <input type="text" id="skinTestName" />
+                            </div>
+                            <div class="test-form">
+                                <label for="skinTestAge">나이</label>
+                                <div class="form-flexible">
+                                    <input type="text" id="skinTestAge" />
+                                    <div class="radio-wrap form-flexible">
+                                        <label for="male">
+                                            <input type="radio" name="gender" id="male">
+                                            <i class="check-icon"></i>
+                                            <span class="label-txt">남</span>
+                                        </label>
+                                        <label for="female">
+                                            <input type="radio" name="gender" id="female">
+                                            <i class="check-icon"></i>
+                                            <span class="label-txt">여</span>
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="test-form">
+                                <label for="skinTestCall">연락처</label>
+                                <div class="form-flexible">
+                                    <input type="text" id="skinTestCall" />
+                                    <button>
+                                        인증번호
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="test-form">
+                                <label for="skinTestCallChk">인증번호</label>
+                                <div class="form-flexible">
+                                    <input type="text" id="skinTestCallChk" />
+                                    <button>인증확인</button>
+                                </div>
+                            </div>
+                            <div class="test-form">
+                                <div class="check-wrap">
+                                    <div class="check-cont">
+                                        <label for="privacyInfo">
+                                            <input type="checkbox" id="privacyInfo">
+                                            <i class="check-icon"></i>
+                                            <span class="label-txt">개인 정보 수집 이용 동의</span>
+                                        </label>
+                                        <a href="/privacyinfo.html" target="_blank">자세히보기</a>
+                                    </div>
+                                    <div class="check-cont">
+                                        <label for="marketing">
+                                            <input type="checkbox" id="marketing">
+                                            <i class="check-icon"></i>
+                                            <span class="label-txt">마케팅 제공 동의</span>
+                                        </label>
+                                        <a href="/marketing.html">자세히보기</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="test-form-btn">
+                                <a href="#none" id="testFormPrevBtn">
+                                    <img src="/img_/icon/link-prev-arrow.png" class="prev-btn" alt="이전">
+                                    이전
+                                </a>
+                                <a href="#none" id="testFormNextBtn">
+                                    결과확인
+                                    <img src="/img_/icon/link-arrow.png" class="next-btn" alt="다음">
+                                </a>
+                            </div>
+                        </div>
+                    </form>
+                </article>
+            </div>
+        </section>
+        <!-- ...section cont -->
+    </main>
+    <!-------...MAIN------->
+
+    <!-------FOOTER------->
+    <footer>
+        <div class="counseling">
+            <h2 class="new-section-tit">무료 상담 신청하기</h2>
+            <form>
+                <div class="form-cont">
+                    <label for="counseling-Name">이름</label>
+                    <div class="flex-cont">
+                        <input type="text" placeholder="홍길동" id="counseling-Name" style="max-width: 58.3%" />
+                        <div class="radio-cont">
+                            <label for="counseling-male">
+                                <input type="radio" id="counseling-male" name="counseling-gender">
+                                <i class="check-icon"></i>
+                                <span class="label-txt">남</span>
+                            </label>
+                            <label for="counseling-female">
+                                <input type="radio" id="counseling-female" name="counseling-gender">
+                                <i class="check-icon"></i>
+                                <span class="label-txt">여</span>
+                            </label>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="form-cont">
+                    <label for="counseling-Age">나이</label>
+                    <input type="text" id="counselingAge" />
+                </div>
+
+                <div class="form-cont">
+                    <label for="counseling-Call">연락처</label>
+                    <div class="flex-cont">
+                        <input type="text" id="counseling-Call" placeholder="'-'제외하고 입력" style="max-width: 65%" />
+                        <button type="button">인증번호</button>
+                    </div>
+                    <div class="flex-cont">
+                        <input type="text" style="max-width: 65%" />
+                        <button type="button">인증확인</button>
+                    </div>
+                </div>
+
+                <div class="check-cont">
+                    <label for="counseling-privacy">
+                        <input type="checkbox" id="counseling-privacy">
+                        <i class="check-icon"></i>
+                        <span class="label-txt">개인정보 수집 이용동의</span>
+                        <a href="#none">자세히보기</a>
+                    </label>
+                    <label for="counseling-marketing">
+                        <input type="checkbox" id="counseling-marketing">
+                        <i class="check-icon"></i>
+                        <span class="label-txt">마케팅 제공 동의</span>
+                        <a href="#none">자세히보기</a>
+                    </label>
+                </div>
+
+                <button href="#none" class="counseling-apply-btn">
+                    무료상담하기
+                    <img src="/img_/icon/link-arrow.png" alt="다음" class="next-btn">
+                </button>
+            </form>
+        </div>
+        <div class="awards-logo-swiper-wrap">
+            <div class="award-logo-swiper swiper-container">
+                <ul class="swiper-wrapper">
+                    <li class="swiper-slide">
+                        <a href="/awards.html#awards-0">
+                            <div class="awards-img-box">
+                                <img src="/img_/awards/aw-logo5.jpg" alt="">
+                            </div>
+                            <p>
+                                국회 보건복지위원회<br />
+                                위원장 표창장
+                            </p>
+                        </a>
+                    </li>
+                    <li class="swiper-slide">
+                        <a href="/awards.html#awards-1">
+                            <div class="awards-img-box">
+                                <img src="/img_/awards/aw-logo6.jpg" alt="">
+                            </div>
+                            <p>
+                                2021 영화인들이 뽑은<br />
+                                착한브랜드 대상
+                            </p>
+                        </a>
+                    </li>
+                    <li class="swiper-slide">
+                        <a href="/awards.html#awards-2">
+                            <div class="awards-img-box">
+                                <img src="/img_/awards/aw-logo0.jpg" alt="">
+                            </div>
+                            <p>
+                                식품의약품 <br />
+                                안전처장상 상장
+                            </p>
+                        </a>
+                    </li>
+                    <li class="swiper-slide logo-img">
+                        <a href="/awards.html#awards-3">
+                            <div class="awards-img-box">
+                                <img src="/img_/awards/aw-logo1.jpg" alt="">
+                            </div>
+                            <p>
+                                2021 TV조선 <br />
+                                경영대상
+                            </p>
+                        </a>
+                    </li>
+                    <li class="swiper-slide logo-img">
+                        <a href="/awards.html#awards-4">
+                            <div class="awards-img-box">
+                                <img src="/img_/awards/aw-logo4.jpg" alt="">
+                            </div>
+                            <p>
+                                국회 과학기술정보 <br />
+                                방송통신위원장표창장
+                            </p>
+                        </a>
+                    </li>
+                    <li class="swiper-slide logo-img">
+                        <a href="/awards.html#awards-5">
+                            <div class="awards-img-box">
+                                <img src="/img_/awards/aw-logo2.png" alt="">
+                            </div>
+                            <p>
+                                2021 K-소비자 <br />
+                                브랜드 대상
+                            </p>
+                        </a>
+                    </li>
+                    <li class="swiper-slide logo-img">
+                        <a href="/awards.html#awards-6">
+                            <div class="awards-img-box">
+                                <img src="/img_/awards/aw-logo3.png" alt="">
+                            </div>
+                            <p>
+                                2021 대한민국 <br />
+                                프리미엄 브랜드 대상
+                            </p>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <article class="footer-inner">
+            <div class="f">
+                <div class="f-logo">
+                    <img src="/img_/logo/logo-wt.png" alt="엑소리젠" />
+                </div>
+                <ul class="f-sns">
+                    <li>
+                        <a href="https://cafe.naver.com/exoregenacademy" target="_blank">
+                            <img src="/img_/icon/n-cafe.png" alt="엑소바이옴 코리아 네이버카페">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://blog.naver.com/exobiomekorea_" target="_blank">
+                            <img src="/img_/icon/n-blog.png" alt="엑소바이옴 코리아 네이버블로그">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.facebook.com/profile.php?id=100073208083913" target="_blank">
+                            <img src="/img_/icon/fb.png" alt="엑소바이옴 코리아 페이스북">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.instagram.com/exobiomekorea_official/" target="_blank">
+                            <img src="/img_/icon/insta.png" alt="엑소바이옴 코리아 인스타그램">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.youtube.com/channel/UCCkMECaYOPPIq_AF4Bd6z9A" target="_blank">
+                            <img src="/img_/icon/youtube.png" alt="엑소바이옴 코리아 유튜브">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://pf.kakao.com/_xbaQQs" target="_blank">
+                            <img src="/img_/icon/kakao.png" alt="엑소바이옴 코리아 카카오채널">
+                        </a>
+                    </li>
+                </ul>
+                <div class="f-link">
+                    <a href="/planner_search_layer.html" class="line">리젠피플 조회</a>
+                    <a href="/cibi.html" target="_blank" class="line">BI</a>
+                    <a href="tos.html" target="_blank" class="line">홈페이지 이용약관</a>
+                    <a href="/privacyinfo.html" target="_blank" class="line">개인정보 처리방침</a>
+                    <a href="/marketing.html" target="_blank" class="line">마케팅제공동의</a>
+                    <a href="http://www.kossa.or.kr/" target="_blank" class="line">한국특수판매공제조합</a>
+                    <a href="#none" target="_blank" class="line">보증서조회</a>
+                    <a href="http://likms.assembly.go.kr/law/lawsLawtInqyDetl1010.do?mappingId=%2FlawsLawtInqyDetl1010.do&genActiontypeCd=2ACT1010&genDoctreattypeCd=DOCT2004&contId=1991123100000005&contSid=0023&cachePreid=ALL&genMenuId=menu_serv_nlaw_lawt_1010&viewGb=PROM"
+                        target="_blank" class="line">방문판매 등에 관한 법률</a>
+                    <a href="/ep-plan.html" target="_blank">EP/보상플랜</a>
+                </div>
+                <div class="f-company">
+                    <span>
+                        엑소바이옴코리아(주)
+                    </span>
+                    <br />
+                    <span class="line">대표 : 차상복</span>
+                    <span>사업자 등록번호 : 522-88-02087</span>
+                    <span class="line">대표번호 : 1577-3392</span>
+                    <span>FAX : 02-6951-3155</span>
+                    <span>서울 강남구 도산대로 460 청담건물 8층, 10층 (청담동6-8)</span>
+                    <span>통신판매업 신고번호 : 2021-서울강남-05035호</span>
+                    <span>개인정보관리 책임자 : 이홍민</span>
+                </div>
+                <span class="f-copy">
+                    COPYRIGHT(C)2021 엑소바이옴코리아(주) <br />
+                    ALL RIGHT RESERVED
+                </span>
+            </div>
+        </article>
+    </footer>
+    <!-------...FOOTER------->
+    <script src="/src/js/skin-test.js" type="text/javascript"></script>
+</body>
+
+</html>

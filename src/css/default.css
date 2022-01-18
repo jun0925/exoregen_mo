@@ -1,0 +1,125 @@
+/**** reset ****/
+* {
+    font-family: 'Noto Sans KR', sans-serif;
+    margin: 0;
+    padding: 0;
+    letter-spacing: -0.05em;
+}
+
+.ng_ft {
+    font-family: 'Nanum Gothic', sans-serif;
+}
+
+html {
+    font-size: 10px;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+}
+
+body {
+    line-height: 1;
+    max-width: 750px;
+    margin: 0 auto;
+}
+
+button {
+    border: 0;
+    background-color: transparent;
+    padding: 0;
+}
+
+ol,ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: #000;
+}
+
+img {
+    width: 100%;
+}
+
+input::placeholder {
+    color: #eaeaea;
+}
+
+textarea::placeholder {
+    color: #eaeaea;
+}
+
+input,select {
+    width: 100%;
+    min-height: 40px;
+    font-size: 12px;
+    font-weight: 400;
+}
+
+textarea {
+    resize: none;
+    box-sizing: border-box;
+    width: 100%;
+    border: 1px solid #000;
+    padding: 15px 10px; 
+    font-size: 12px;
+    height: 166px;
+}
+
+i.check-icon {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    background-image: url(/img_/icon/check-none.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    vertical-align: middle;
+}
+
+input[type="checkbox"]:checked ~ i.check-icon,
+input[type="radio"]:checked ~ i.check-icon {
+    background-image: url(/img_/icon/check-on.png);
+}
+
+span.label-txt {
+    vertical-align: middle;
+    margin-left: 6px;
+}
+
+input[type="text"],
+input[type="password"] {
+    box-sizing: border-box;
+    border: 1px solid #000;
+    padding-left: 10px;
+}
+
+input[type="radio"],
+input[type="checkbox"] {
+    display: none;
+    width: 1px;
+    height: 1px;
+    position: absolute;
+}
+
+input.readonly {
+    background: #ccc;
+    border: 0;
+}
+
+select {
+    box-sizing: border-box;
+    border: 1px solid #000;
+    -moz-appearance: none;
+    /*Firefox*/
+    -webkit-appearance: none;
+    /* Safari,Chorome*/
+    appearance: none;
+    background: url("/img_/icon/arrow-down.png") no-repeat;
+    background-size: 14px 11px;
+    background-position: center right 20px;
+    padding-left: 10px;
+    color: #ccc;
+    font-weight: 400;
+}
+
+/**** //reset ****/

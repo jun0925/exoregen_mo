@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=10, minimum-scale=0, user-scalable=yes">
+<title>EXOREGEN</title>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link
+        href="https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;700;800&family=Noto+Sans+KR:wght@100;300;400;500;700&display=swap&family=Roboto:wght@300;400;500;700&display=swap"
+        rel="stylesheet">
+ 
+<link type="text/css" href="/src/libs_/swiper.css" rel="stylesheet" />
+<link type="text/css" href="/src/css/default.css" rel="stylesheet" />
+<link type="text/css" href="/src/css/common.css" rel="stylesheet" />
+<script src="src/js/common.js" type="text/javascript"></script>
+</head>
+<body>
+    <div class="layer-wrap">
+        <div class="layer-box">
+            <div class="layer-top">
+                <h2>인플루언서 검색확인</h2>
+                <div class="close-btn">
+                    <img src="/img_/icon/close-btn.png" alt="닫기" />
+                </div>
+            </div>
+            <div class="layer-cont">
+                <form>
+                    <div class="form-cont">
+                        <label for="plannerName">리젠피플 성명</label>
+                        <input type="text" id="plannerName" placeholder="홍길동" />
+                    </div>
+                    <div class="form-cont">
+                        <label for="plannerName">리젠피플 코드</label>
+                        <input type="text" id="plannerName" placeholder="'-'제외하고 입력" />
+                    </div>
+                    <div class="form-cont">
+                        <label for="plannerName">생년월일</label>
+                        <div class="flex-box">
+                            <select name="year">
+                                <option value="">년</option>
+                            </select>
+                            <select name="month">
+                                <option value="">월</option>
+                            </select>
+                            <select name="day">
+                                <option value="">일</option>
+                            </select>
+                        </div>
+                    </div>
+                    <a href="#none" class="planner-btn">
+                        확인
+                        <img src="/img_/icon/link-arrow.png" alt="다음" class="next-btn">
+                    </a>
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

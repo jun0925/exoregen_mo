@@ -1,0 +1,112 @@
+@import "_var.scss";
+
+
+#news-page .section-hof {
+    margin-bottom: $margin55px;
+    
+    @include tabSwiperStyle();
+
+    .cont-wrap {
+        //margin-top: 90px;
+
+        .best-leader-cont-wrap {
+            margin-bottom: 67px;
+        }
+
+        .leader-of-month {
+            position: relative;
+            text-align: center;
+            font-size: 0;
+
+            img {
+                max-width: 18px;
+                vertical-align: middle;
+            }
+
+            span {
+                font-size: 1.5rem;
+                font-weight: $fw-bold;
+                vertical-align: middle;
+                margin-left: 5px;
+            }
+
+            &:before,
+            &:after {
+                content: "";
+                display: none;
+                height: 1px;
+                background: #000;
+                width: 32%;
+                @include position($t: 50%);
+            }
+
+            &:after {right: 0;}
+        }
+        .best-leader-list {
+            display: grid;
+            grid-template-areas: ". .";
+            grid-gap: 112px 15px;
+            margin-top: 90px;
+        }
+
+        .best-leader {
+            position: relative;
+            border: $border-black;
+            background: $white;
+            padding: {
+                top: 60px;
+                bottom: 40px;
+            }
+
+            &-img {
+                @include position($t: -61px);
+                left: 50%;
+                transform: translateX(-50%);
+                width: 68%;
+
+                img {
+                    border-radius: 50%;
+                }
+            }
+
+            &-name {
+                font-size: 1.8rem;
+                font-weight: $fw-bold;
+                text-align: center;
+                margin-bottom: 30px;
+            }
+
+            &-typho {
+                font-size: 1.2rem;
+                font-weight: $fw-light;
+                line-height: 1.33;
+                margin-bottom: 8px;
+                @include overfTextVertical($lineClamp: 2);
+            }
+
+            &-info {
+                font-size: 9px;
+                font-weight: $fw-light;
+                text-align: center;
+            }
+
+            .icon-box {
+                @include flex(space-around,null);
+                @include position($b: -15px,$l: 50%);
+                background: #fff;
+                transform: translateX(-50%);
+                width: 80px;
+
+                a {
+                    display: block;
+                    width: 25px;
+                }
+            }
+        }
+
+        .circle-btn {
+            @include circleBtn($purple);
+            margin: 0 auto;
+        }
+    }
+}

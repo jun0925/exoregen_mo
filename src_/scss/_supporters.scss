@@ -1,0 +1,139 @@
+@import "_var.scss";
+$brandSecWs: 115px;
+.spt {
+    @include tabSwiperStyle();
+}
+
+.spt .top-bg {
+    @include sectionTopBg("bg/spt-bg.jpg");
+
+    &-cont {
+        @include position(absolute, 60%, 50%, null, null) {
+            transform: translate(-50%,-50%);
+            text-align: center;
+        }
+
+        h2,p { color: $white; }
+        h2 {
+            font: {
+                size: 2.4rem;
+                weight: $fw-light;
+            }
+            letter-spacing: 0;
+            margin-bottom: 15px;
+        }
+        p {
+            font: {
+                size: 1.2rem;
+                weight: $fw-light;
+            }
+        }
+    }
+}
+
+/* spt 01 */
+#supporters01 .spt {
+
+    .kobeas-main {
+        background: url(/img_/spt/spt-main-bg.jpg) no-repeat;
+        height: 394px;
+        
+        .kobeas-subject {
+            padding: 55px 35px 0;
+            
+            p {
+                color: $white;
+                font-size: 1.5rem;
+                font-weight: $fw-light;
+                line-height: 1.6;
+                
+                span.big {
+                    font-size: 2.8rem;
+                    font-weight: $fw-bold;
+                }
+    
+                span.midium {
+                    font-size: 2rem;
+                    $font-weight: 400;
+                }
+
+                span:last-child {
+                    display: block;
+                    margin-top: 10px;
+                }
+            }
+        }
+    }
+
+    .kobeas-img-box {
+        padding: 0 25px;
+        position: relative;
+        top: -55px;
+    }
+
+    .intro {
+        margin-bottom: $margin55px;
+        
+        &-txt-box {
+            text-align: center;
+            
+            p {
+                @include contDescription();
+                word-break: keep-all;
+                margin-bottom: 25px;
+
+                &:last-child {margin-bottom: 0;}
+            }
+        }
+    }
+
+    .section-spt-member {
+        margin-bottom: $margin55px;
+        
+        .kobeas-list-wrap {
+
+            .kobeas-list {
+                display: grid;
+                grid-template-areas: ". .";
+                grid-gap: 30px 20px;
+    
+                .kobeas-thumb {
+                    height: 0;
+                    padding-bottom: calc(242 / 208 * 100%);
+                    background-repeat: no-repeat;
+                    background-position: top center;
+                    background-size: cover;
+                }
+
+                .kobeas-info {
+                    margin-top: 20px;
+                    text-align: center;
+                    
+                    .kobeas-name {
+                        font: {
+                            size: 1.5rem;
+                            weight: $fw-light;
+                        }
+                    }
+    
+                    .kobeas-position {
+                        font: {
+                            size: 0.9rem;
+                            weight: $fw-light;
+                        }
+                        color: $gray;
+                        white-space: nowrap;
+                        overflow: hidden;
+                        text-overflow: ellipsis;
+                        max-width: 123px;
+                        margin: 10px auto 0;
+                        
+                        &:nth-child(2) {margin-top: 20px;}
+                    }
+                }
+            }
+        }
+    }
+}
+
+/* ...spt 01 */

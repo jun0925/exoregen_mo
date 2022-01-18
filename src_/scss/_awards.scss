@@ -1,0 +1,97 @@
+@import "_var.scss";
+
+.section-awards {
+    @include tabSwiperStyle();
+
+    .awards-list {
+        margin-bottom: 40px;
+        &>li {
+            padding: 40px 0;
+
+            &:nth-child(2n-1) {
+                background: #f7f7f7;
+            }
+
+            .award-thumb {
+                max-width: 50%;
+                margin: 0 auto;
+            }
+
+            .award-info {
+                text-align: center;
+                margin-top: 30px;
+                margin-bottom: 25px;
+
+                &.mar0 {
+                    margin-top: 0;
+                }
+
+                .award-name {
+                    font-size: 1.8rem;
+                    letter-spacing: 0;
+                    margin-bottom: 10px;
+                }
+
+                .award-desc {
+                    padding: 0 27px;
+
+                    p {
+                        font-size: 1.3rem;
+                        font-weight: 300;
+                        letter-spacing: 0;
+                        word-break: keep-all;
+                        line-height: 1.38;
+                    }
+                }
+
+                .awards-detail-swiper {
+                    margin-top: 25px;
+                    padding: 0 10px;
+
+                    .swiper-slide {
+                        width: auto;
+                        
+                        img {
+                            width: auto;
+                        }
+                    }
+
+                    &.no-swiper {
+                        .swiper-wrapper {justify-content:center;}
+                    }
+
+                }
+            }
+
+            &>a {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                border: 1px solid $purple;
+                color: $purple;
+                font-size: 1.2rem;
+                font-weight: 300;
+                letter-spacing: 0.2em;
+                width: 135px;
+                height: 30px;
+                margin: 0 auto;
+                position: relative;
+
+                &:after {
+                    content: "+";
+                    color: $purple;
+                    position: absolute;
+                    top: 45%;
+                    right: 15px;
+                    transform: translateY(-50%);
+                    font-size: 2.25rem;
+                    font-weight: 300;
+                }
+            }
+        }
+    }
+
+    .circle-btn {
+        @include circleBtn($purple){margin: 0 auto 60px};
+    }
+}

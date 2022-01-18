@@ -1,0 +1,35 @@
+@import "_var.scss";
+
+.question-page {
+    margin-top: $headerResetMargin;
+}
+
+.question-page .question-top {
+    @include subTopText();
+}
+
+.question-page .section-question {
+    margin-bottom: $margin55px;
+    .qs-form-cont {
+        margin-bottom: 30px;
+        label {
+            @include formLabel();
+        }
+
+        .detail-link {
+            font: {
+                size: 12px;
+                weight: $fw-bold;
+            }
+            text-decoration: underline;
+            vertical-align: middle;
+            margin-left: 5px;
+        }
+    }
+
+        
+    .square-btn {
+        @include squareBtn($black);
+        margin: 0 auto;
+    }
+}

@@ -1,0 +1,193 @@
+@import "_var.scss";
+$brandSecWs: 115px;
+$ballTop: -70px;
+
+/**** _howtouse.scss ****/
+.use .top-bg {
+    @include sectionTopBg("bg/use-bg.jpg");
+
+    &-cont {
+        @include position(absolute, 60%, 50%, null, null) {
+            transform: translate(-50%, -50%);
+            text-align: center;
+        }
+
+        h2 {
+            font: {
+                size: 2.4rem;
+                weight: $fw-light;
+            }
+
+            color: $white;
+            letter-spacing: 0;
+        }
+    }
+}
+
+/* howtuuse common */
+#use {
+    @include tabSwiperStyle();
+}
+/* ...howtuuse common */
+
+/* howtouse01 */
+#use .section-use {
+    margin-bottom: $margin55px;
+
+    .cont-wrap {
+        .htu-list {
+            .htu {
+                margin-bottom: 50px;
+
+                &:last-child {margin-bottom: 0;}
+
+                &-txt-box {
+                    margin-top: 20px;
+                    text-align: center;
+
+                    .htu-name {
+                        font: {
+                            size: 1.8rem;
+                            weight: $fw-bold;
+                        }
+                        margin-bottom: 20px;
+                    }
+
+                    .htu-description {
+                        font: {
+                            size: 1.2rem;
+                            weight: $fw-light;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+
+}
+/* ...howtouse01 */
+
+/* howtouse01-detail */
+#use .section-use-detail {
+    
+    .cont-wrap {
+        .cont-tit-wrap {
+            text-align: center;
+            margin-bottom: 30px;
+
+            h3 {
+                font: {
+                    size: 3rem;
+                    weight: $fw-light;
+                }
+            }
+        }
+
+        .cont-video-thumb {
+            @include videoThumb() {
+                margin-bottom: 30px;
+            }
+        }
+
+        .cont-detail {
+            margin-bottom: 30px;
+        }
+    }
+}
+/* ...howtouse01-detail */
+
+/* howtouse02 */
+#use .section-use02 {
+
+    .tit-wrap {
+        text-align: center;
+        margin-bottom: 40px;
+
+        h3 {
+            font-size: 2rem;
+            font-weight: 300;
+            letter-spacing: 0.02em;
+            color: $purple;
+            margin-bottom: 10px;
+        }
+
+        p {
+            font-size: 1.1rem;
+            font-weight: $fw-light;
+            letter-spacing: 0.05em;
+        }
+    }
+    .cont {
+        border-top: 1px solid #eaeaea;
+        padding-top: 14px;
+        padding-bottom: 60px;
+
+        &:last-child {
+            padding-bottom: 110px;
+        }
+        
+        .guide-txt {
+            font-size: 1.5rem;
+            font-weight: $fw-bold;
+            margin-bottom: 30px;
+
+            & > span {
+                position: relative;
+
+                &:before {
+                    content: " ";
+                    display: block;
+                    width: 100%;
+                    height: 4px;
+                    background: linear-gradient(150deg, rgb(165, 19, 207), rgb(110, 31, 151), rgb(96, 23, 132));
+                    position: absolute;
+                    top: -11px;
+                }
+                
+                span {font-weight: 300;}
+                span.bold {font-weight: 600;}
+            }
+        }
+
+        .cont-img {
+            padding-left: 10px;
+        }
+    }
+}
+/* ...howtouse02 */
+
+/* howtouse03 */
+#use .section-use03 {
+    margin-bottom: $margin55px;
+
+    .img-box {
+        margin: 0 23px 20px;
+    }
+
+    .cont-wrap {
+        overflow:hidden;
+    }
+
+    @include testIntroStyle();
+
+    .img-box {
+        transform: translateX(200%);
+        transition: 0.9s;
+    }
+
+    .cont {
+        transform: translateX(-200%);
+        transition: 0.9s;
+    }
+}
+/* ...howtouse03 */
+
+@media screen and (max-width:320px) {
+    #use .section-use {
+        .tab-outer {
+            margin-left: 25px;
+        }
+    }
+}
+/**** //_howtouse.scss ****/

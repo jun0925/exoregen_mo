@@ -1,0 +1,52 @@
+@import "_var.scss";
+
+.login-page {
+    margin-top: $headerResetMargin;
+    margin-bottom: $margin55px;
+}
+
+.section-login {
+    .cont-top {
+        @include subTopText() {
+            letter-spacing: 0;
+        };
+    }
+
+    .form-cont {
+        margin-bottom: 30px;
+    }
+
+    label {
+        display: block;
+        font-size: 9px;
+        margin-bottom: 20px;
+
+        .label-txt {
+            font-weight: $fw-light;
+            opacity: $opacity6;
+        }
+    }
+
+    .btn-box {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 30px;
+        .login-btn {
+            @include squareBtn($black);
+        }
+
+        .join-link-btn {
+            @include squareBtn($red);
+        }
+    }
+
+    .find-link {
+        display: block;
+        text-align: center;
+        opacity: $opacity6;
+        font: {
+            size: 9px;
+            weight: $fw-light;
+        }
+    }
+}

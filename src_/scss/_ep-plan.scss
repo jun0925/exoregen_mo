@@ -1,0 +1,55 @@
+@import "_var.scss";
+
+.ep-plan-page {
+    margin-top: $headerResetMargin;
+}
+
+.ep-plan-section {
+    
+    .ep-tit-wrap {
+        text-align: center;
+        margin-bottom: 55px;
+
+        h2 {
+            font-size: 2.4rem;
+            margin-bottom: 20px;
+
+            span {font-weight: $fw-normal;}
+        }
+
+        p {
+            font-size: 1.2rem;
+            font-weight: $fw-light;
+            color: $gray;
+            letter-spacing: 0;
+        }
+    }
+
+    .ep-cont {
+        margin-bottom: 25px;
+
+        & > span {
+            font-size: 1.2rem;
+            font-weight: $fw-bold;
+        }
+
+        & > ul {
+            margin: {
+                top: 17px;
+                left: -5px;
+            }
+
+            li {
+                @include flex(null,null);
+                font-size: 1.2rem;
+                font-weight: $fw-light;
+                line-height: 1.5;
+                word-break: keep-all;
+
+                &:before {
+                    content: "ㆍ";
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,75 @@
+@import "_var.scss";
+
+.find-page {
+    margin-top: $headerResetMargin;
+    margin-bottom: $margin55px;
+}
+
+.section-find {
+    .cont-top {
+        border-bottom: $border-black;
+        margin-bottom: 20px;
+        @include subTopText() {
+            letter-spacing: 0;
+        };
+    }
+
+    .find-tab {
+        @include flex(center,null);
+        margin-bottom: 30px;
+        li {
+            font-size: 1.5rem;
+            opacity: $opacity6;
+            margin-right: 55px;
+            &:last-child {margin-right: 0;}
+            &.choice {
+                color: $purple;
+                font-weight: $fw-bold;
+                opacity: $opacity10;
+            }
+        }
+    }
+
+    .cont-find {
+
+        .find-pw-box {
+            display: none;
+        }
+        
+        .form-cont {
+            margin-bottom: 30px;
+            &.grid-box {
+                display: grid;
+                grid-template-areas: ". .";
+                grid-gap: 10px;
+            }
+
+            & > button {
+                @include formSearchBtn();
+            }
+        }
+
+        .find-btn {
+            @include squareBtn($black) {
+                margin: 0 auto;
+            };
+        }
+
+        .find-guide {
+            margin-top: 30px;
+            li {
+                @include flex(null,null);
+                line-height: 1.5;
+                font: {
+                    size: 9px;
+                    weight: $fw-light;
+                }
+
+                &:before {
+                    content: "·";
+                    margin-right: 3px;
+                }
+            }
+        }
+    }
+}

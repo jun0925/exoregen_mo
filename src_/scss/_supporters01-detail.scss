@@ -1,0 +1,131 @@
+@import "_var.scss";
+
+#kobeas .kobeas-detail {
+    margin-top: 113px;
+}
+
+#kobeas .kobeas-member-section {
+    .cont-tit-wrap {
+        @include subContTit($titMargin:20px);
+        border-bottom: 0;
+    }
+
+    @include tabSwiperStyle();
+
+    .cont-wrap {
+        margin-bottom: $margin55px;
+
+        .cont1 {
+            margin-bottom: $margin55px;
+
+            &-img-wrap {
+                font-size: 0;
+                margin-bottom: 30px;
+
+                .kobeas-main-swiper {
+                    height: 379px;
+                    
+                    .swiper-slide {
+                        background-repeat: no-repeat;
+                        background-size: cover;
+                        background-position: top center;
+                        height: 100%;
+                    }
+                }
+                .kobeas-thumb-swiper {
+                    height: 119px;
+
+                    .swiper-slide {
+                        box-sizing: border-box;
+                        background-repeat: no-repeat;
+                        background-size: cover;
+                        background-position: top center;
+                        height: 100%;
+
+                        &.swiper-slide-thumb-active {
+                            border: $border-purple;
+                        }
+                    }
+
+                    .swiper-button-prev,
+                    .swiper-button-next {
+                        top: calc(100% - 33px);
+                    }
+                }
+            }
+
+            &-kobeas-info {
+                .kobeas-name {
+                    font-size: 2.4rem;
+                    font-weight: $fw-bold;
+                }
+
+                p.info.code {
+                    font-size: 1.5rem;
+                    font-weight: $fw-bold;
+                    margin-top: 10px;
+                    letter-spacing: 0;
+                }
+
+                .kobeas-subject {
+                    margin-top: 30px;
+
+                    p.info {
+                        font-size: 1.5rem;
+                        font-weight: $fw-light;
+                        margin-bottom: 5px;
+
+                        &.zero {letter-spacing: 0;}
+                    }
+
+                    .activity-list {
+                        margin-top: 20px;
+
+                        li {
+                            font-size: 1.2rem;
+                            font-weight: $fw-light;
+                            margin-bottom: 5px;
+                        }
+                    }
+                }
+            }
+        }
+
+        .cont2 {
+            margin-bottom: $margin55px;
+
+            .kobeas-news-list {
+                display: grid;
+                grid-template-areas: ". .";
+                grid-gap: 30px 20px;
+                margin-bottom: 30px;
+
+                .news {
+                    @include newsLayout(null,calc(100vh - 73vh));
+                }
+            }
+
+            .circle-btn {
+                @include circleBtn($purple) {
+                    margin: 0 auto;
+                };
+            }
+        }
+
+    }
+
+    #recommandProduct {
+        margin-left: 45px;
+        margin-bottom: 35px;
+        padding-right: 45px;
+
+        .product {
+            @include products();
+        }
+
+        .swiper-button-prev,
+        .swiper-button-next {
+            top: calc(100% - 54px);
+        }
+    }
+}

@@ -1,0 +1,79 @@
+@import "_var.scss";
+
+.cibi-page {
+    margin-top: $headerResetMargin;
+}
+
+#cibi .section-cibi {
+    margin-bottom: $margin55px;
+
+    .cont-top {
+        text-align:center;  
+        margin-bottom: $margin55px;
+        .cibi-tab {
+            font-size: 0;
+            margin-bottom: 20px;
+
+            .tab {
+                font-size: 2.4rem;
+                letter-spacing: 0;
+                margin-right: 55px;
+                opacity: $opacity6;
+
+                &:last-child {margin-right: 0;}
+
+                &.choice {
+                    opacity: $opacity10;
+                    font-weight: $fw-bold;
+                    color: $purple;
+                }
+            }
+        }
+
+        p {
+            font: {
+                size: 1.2rem;
+                weight: $fw-light;
+            }
+            line-height: 1.5;
+        }
+    }
+
+    .cont-box {
+
+        & > div {
+            transition: 0.5s;
+            transform: translateY(50px);
+            opacity: 0;
+        
+            &.show {
+                opacity: 1;
+                transform: none;
+            }
+        }
+
+        .ci-wrap {
+            display: none;
+
+            .ci-cont {
+                margin-bottom: 30px;
+                
+                &:last-child {margin-bottom: 0;}
+
+                p {
+                    font-size: 1.5rem;
+                    font-weight: $fw-bold;
+                    margin-bottom: 20px;
+                }
+            }
+        }
+
+        .bi-wrap {
+            .bi-cont {
+                margin-bottom: 30px;
+
+                &:last-child {margin-bottom: 0;}
+            }
+        }
+    }
+}

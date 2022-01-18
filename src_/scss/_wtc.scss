@@ -1,0 +1,66 @@
+@import "_var.scss";
+
+#wtc .wtc-page {
+    margin-top: $headerResetMargin;
+}
+
+#wtc .wtc-section {
+    margin-bottom: $margin55px;
+    
+    .cont-tit-wrap {
+        @include subContTit($titMargin:13px);
+    }
+
+    .cont-tab-wrap {
+        margin-bottom: 30px;
+
+        .tab-list {
+            @include flex(center,null);
+            
+            .tab {
+                margin-right: 55px;
+                font-size: 1.5rem;
+                color: $gray;
+
+                &:last-child {margin-right: 0;}
+
+                &.choice {
+                    color: $purple;
+                    font-weight: $fw-bold;
+                }
+            }
+        }
+    }
+
+    .wtc-cont {
+        .wtc-info {
+            margin-bottom: 30px;
+
+            li {
+                margin-bottom: 30px;
+                &:last-child {margin-bottom: 0;}
+                p,span {
+                    font-size: 1.5rem;
+                }
+    
+                p {
+                    font-weight: $fw-bold;
+                    margin-bottom: 20px;
+                }
+                span{
+                    font-weight: $fw-light;
+                    word-break: keep-all;
+                    line-height: 1.4;
+                }
+            }
+        }
+
+        .wtc-interior {
+            font-size: 0;
+            img {
+                margin-bottom: 20px;
+            }
+        }
+
+    }
+}
