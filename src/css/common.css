@@ -1435,8 +1435,9 @@ header.reset .menu-btn div {
 .tv-section .video-thumb {
   position: relative;
   width: 100%;
-  padding-bottom: calc(360 / 480 * 100%);
-  background-size: 135%;
+  height: 0;
+  padding-bottom: calc(223 / 345 * 100%);
+  background-size: 120%;
   background-position: center center;
   background-repeat: no-repeat;
 }
