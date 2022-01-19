@@ -529,7 +529,9 @@ header {
 /** ..._ep-plan.scss **/
 /**** footer ****/
 footer {
-    
+    overflow: hidden;
+    position: relative;
+
     .counseling {
         display: none;
         background: #f0f0f0;
@@ -668,10 +670,35 @@ footer {
     
     .f {
         margin: 0 45px;
+        position: relative;
 
         &-logo {
             max-width: 142px;
             margin-bottom: 30px;
+        }
+
+        .company-combo-wrap {
+            @include position($t: 0, $r: 0);
+            
+            .company-combo {
+                box-sizing: border-box;
+                font-size: 1.2rem;
+                color: #fff;
+                border: 2px solid rgba(255, 255, 255, 0.5);
+                letter-spacing: 0;
+                padding: 6px 0;
+                width: 125px;
+                text-align: center;
+                position: relative;
+                padding-right: 20px;
+
+                &:after {
+                    content: "+";
+                    font-size: 2rem;
+                    @include position($t: 50%, $r: 10px);
+                    transform: translateY(-50%);
+                }
+            }
         }
 
         &-sns {
@@ -724,7 +751,75 @@ footer {
             }
         }
     }
+    .company-box {
+        display: none;
+        @include position( $l:0, $r:0, $b: -100%);
+        box-sizing: border-box;
+        width: 100%;
+        max-height: 89vh;
+        background: rgba(62, 33, 93, 0.9);
+        padding: 20px 10px;
+        overflow-y: auto;
+        z-index: 999;
+        transition: 0.5s;
+    
+        &.on {
+            bottom: 0;
+        }
+    
+        .close-btn {
+            @include position($t: -2px, $r: 22px);
+            color: #ccc;
+            display: inline-block;
+            font-size: 5rem;
+            transform: rotate(45deg);
+            font-weight: 200;
+        }
+    
+        .company-box-tit {
+            color: #ccc;
+            font-size: 1.5rem;
+            margin-bottom: 40px;
+            letter-spacing: 0;
+        }
+    
+        .company-list-tit {
+            font-size: 1.5rem;
+            color: $white;
+            background: $black;
+            padding: 10px 0 10px 16px;
+            letter-spacing: 0;
+        }
+    
+        .company-list {
+            margin-bottom: 15px;
+    
+            &:last-child {margin-bottom: 0;}
+    
+            ul {
+                display: grid;
+                grid-template-areas: ". .";
+                grid-gap: 15px 0;
+                padding: 17px 0 25px 16px;
+                background: #2c2c2c;
+    
+                a {
+                    font-size: 1.3rem;
+                    font-weight: $fw-light;
+                    letter-spacing: 0;
+                    color: #ccc;
+                    white-space: nowrap;
+    
+                    strong {
+                        color: $white;
+                        letter-spacing: 0;
+                    }
+                }
+            }
+        }
+    }
 }
+
 /**** ...footer ****/
 @media screen and (max-width:380px) {
     .event-layer {

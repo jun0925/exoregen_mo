@@ -68,4 +68,24 @@ $(function () {
             },
         },
     });
+
+    //footer 계열사 콤보박스 기능
+    var comboBox = document.querySelector(".company-combo");
+    var companyBox = document.querySelector(".company-box");
+    var companyBoxClose = document.querySelector(".company-box .close-btn");
+    var openClass = "on";
+
+    comboBox.onclick = function(){
+        companyBox.style.display = "block";
+        setTimeout(function(){
+            companyBox.classList.add(openClass);
+        },50);
+    }
+
+    companyBoxClose.onclick = function(){
+        companyBox.classList.remove(openClass);
+        setTimeout(function(){
+            companyBox.style.display = "none";
+        },400);
+    }
 });

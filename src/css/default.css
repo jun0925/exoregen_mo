@@ -20,6 +20,7 @@ body {
     line-height: 1;
     max-width: 750px;
     margin: 0 auto;
+    position: relative;
 }
 
 button {
