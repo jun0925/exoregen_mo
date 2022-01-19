@@ -8512,6 +8512,12 @@ footer .company-box .company-list ul {
   background: #2c2c2c;
 }
 
+footer .company-box .company-list ul .grid2-2 {
+  -ms-grid-row: 2;
+  -ms-grid-column: 2;
+  grid-area: 2 / 2;
+}
+
 footer .company-box .company-list ul a {
   font-size: 1.3rem;
   font-weight: 300;

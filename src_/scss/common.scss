@@ -803,6 +803,10 @@ footer {
                 padding: 17px 0 25px 16px;
                 background: #2c2c2c;
     
+                .grid2-2 {
+                    grid-area: 2 / 2;
+                }
+
                 a {
                     font-size: 1.3rem;
                     font-weight: $fw-light;
