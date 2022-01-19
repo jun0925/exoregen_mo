@@ -8384,6 +8384,14 @@ footer .f .company-combo-wrap .company-combo {
   padding-right: 20px;
 }
 
+footer .f .company-combo-wrap .company-combo::-moz-selection {
+  background: transparent;
+}
+
+footer .f .company-combo-wrap .company-combo::selection {
+  background: transparent;
+}
+
 footer .f .company-combo-wrap .company-combo:after {
   content: "+";
   font-size: 2rem;
