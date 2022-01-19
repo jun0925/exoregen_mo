@@ -8476,7 +8476,7 @@ footer .company-box.on {
 
 footer .company-box .close-btn {
   position: absolute;
-  top: -2px;
+  top: 0;
   right: 22px;
   color: #ccc;
   display: inline-block;

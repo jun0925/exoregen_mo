@@ -770,7 +770,7 @@ footer {
         }
     
         .close-btn {
-            @include position($t: -2px, $r: 22px);
+            @include position($t: 0, $r: 22px);
             color: #ccc;
             display: inline-block;
             font-size: 5rem;
