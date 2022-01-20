@@ -996,11 +996,12 @@
 
             function imgOpen(imgSrc) {
                 imgSrcResult = imgSrc.replace(/(.png|.jpg|.jpeg|.gif)$/, '');
+                var jpgFile = "jpg" || "JPG";
                 imgPopup.style.display = "block";
                 htmlBody.style.overflowY = "hidden";
                 setTimeout(function () {
                     imgPopupBox.classList.add("show");
-                    img.setAttribute("src", imgSrcResult + "+b.jpg");
+                    img.setAttribute("src", imgSrcResult + "+b." + jpgFile);
                 }, 50);
             }
 
