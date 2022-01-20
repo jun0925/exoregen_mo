@@ -33,7 +33,7 @@
             grid-gap: 40px 20px;
             margin-bottom: 30px;
             .news {
-                @include newsLayout(null,calc(100vh - 73vh));
+                @include newsLayout(null);
             }
         }
 

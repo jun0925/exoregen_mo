@@ -121,14 +121,16 @@ $opacity10 : 1;
     margin-bottom: $margin55px;
 }
 
-@mixin newsLayout($maxWidth, $thumbHeight) {
+@mixin newsLayout($maxWidth) {
     max-width: $maxWidth;
 
     &-thumb {
         max-width: 100%;
-        height: $thumbHeight;
+        height: 0;
+        padding-bottom: calc(476 / 360 * 100%);
         background-repeat: no-repeat;
-        background-size: 100%;
+        background-size: cover;
+        background-position: center center;
         margin-bottom: 20px;
     }
 

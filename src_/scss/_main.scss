@@ -684,7 +684,7 @@
         }
 
         .news {
-            @include newsLayout(180px,238px);
+            @include newsLayout(180px);
         }
     }
 

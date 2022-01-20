@@ -233,7 +233,7 @@ header.reset .menu-btn div {
 /**** ....header ****/
 /**** common ****/
 .section-inner {
-  margin: 0 45px;
+  margin: 0 25px;
 }
 
 .fix-btn-list {
@@ -1792,9 +1792,11 @@ header.reset .menu-btn div {
 
 #main .section7 #newsSwiper .news-thumb {
   max-width: 100%;
-  height: 238px;
+  height: 0;
+  padding-bottom: calc(476 / 360 * 100%);
   background-repeat: no-repeat;
-  background-size: 100%;
+  background-size: cover;
+  background-position: center center;
   margin-bottom: 20px;
 }
 
@@ -5286,9 +5288,11 @@ header.reset .menu-btn div {
 
 #kobeas .kobeas-member-section .cont-wrap .cont2 .kobeas-news-list .news-thumb {
   max-width: 100%;
-  height: calc(100vh - 73vh);
+  height: 0;
+  padding-bottom: calc(476 / 360 * 100%);
   background-repeat: no-repeat;
-  background-size: 100%;
+  background-size: cover;
+  background-position: center center;
   margin-bottom: 20px;
 }
 
@@ -5536,9 +5540,11 @@ header.reset .menu-btn div {
 
 .section-news .news-list-wrap .news-list .news-thumb {
   max-width: 100%;
-  height: calc(100vh - 73vh);
+  height: 0;
+  padding-bottom: calc(476 / 360 * 100%);
   background-repeat: no-repeat;
-  background-size: 100%;
+  background-size: cover;
+  background-position: center center;
   margin-bottom: 20px;
 }
 
@@ -8572,9 +8578,6 @@ footer .company-box .company-list ul a strong {
     padding: 55px 25px;
   }
   footer .f {
-    margin: 0 25px;
-  }
-  .section-inner {
     margin: 0 25px;
   }
   .nav-box nav .nav-list {
