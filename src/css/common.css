@@ -688,6 +688,10 @@ header.reset .menu-btn div {
   background-image: url("/img_/main-sl6.jpg");
 }
 
+#main .section1 .swiper-container .swiper-slide.main-slide7 {
+  background-image: url("/img_/exo_suncream.jpg");
+}
+
 #main .section1 .swiper-container .swiper-slide .swiper-cont {
   position: absolute;
   top: 37%;
