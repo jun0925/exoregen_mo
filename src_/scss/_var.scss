@@ -132,6 +132,19 @@ $opacity10 : 1;
         background-size: cover;
         background-position: center center;
         margin-bottom: 20px;
+        position: relative;
+    }
+
+    &-label {
+        font-size: 1.3rem;
+        font-weight: $fw-light;
+        color: $white;
+        padding: 8px 15px;
+        position: absolute;
+        letter-spacing: 0;
+
+        &.regen-label {background: $purple;}
+        &.heal-label {background: #43695c;}
     }
 
     &-info {

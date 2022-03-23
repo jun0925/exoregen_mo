@@ -1802,6 +1802,24 @@ header.reset .menu-btn div {
   background-size: cover;
   background-position: center center;
   margin-bottom: 20px;
+  position: relative;
+}
+
+#main .section7 #newsSwiper .news-label {
+  font-size: 1.3rem;
+  font-weight: 300;
+  color: #fff;
+  padding: 8px 15px;
+  position: absolute;
+  letter-spacing: 0;
+}
+
+#main .section7 #newsSwiper .news-label.regen-label {
+  background: #3e215d;
+}
+
+#main .section7 #newsSwiper .news-label.heal-label {
+  background: #43695c;
 }
 
 #main .section7 #newsSwiper .news-info {
@@ -5298,6 +5316,24 @@ header.reset .menu-btn div {
   background-size: cover;
   background-position: center center;
   margin-bottom: 20px;
+  position: relative;
+}
+
+#kobeas .kobeas-member-section .cont-wrap .cont2 .kobeas-news-list .news-label {
+  font-size: 1.3rem;
+  font-weight: 300;
+  color: #fff;
+  padding: 8px 15px;
+  position: absolute;
+  letter-spacing: 0;
+}
+
+#kobeas .kobeas-member-section .cont-wrap .cont2 .kobeas-news-list .news-label.regen-label {
+  background: #3e215d;
+}
+
+#kobeas .kobeas-member-section .cont-wrap .cont2 .kobeas-news-list .news-label.heal-label {
+  background: #43695c;
 }
 
 #kobeas .kobeas-member-section .cont-wrap .cont2 .kobeas-news-list .news-info {
@@ -5550,6 +5586,24 @@ header.reset .menu-btn div {
   background-size: cover;
   background-position: center center;
   margin-bottom: 20px;
+  position: relative;
+}
+
+.section-news .news-list-wrap .news-list .news-label {
+  font-size: 1.3rem;
+  font-weight: 300;
+  color: #fff;
+  padding: 8px 15px;
+  position: absolute;
+  letter-spacing: 0;
+}
+
+.section-news .news-list-wrap .news-list .news-label.regen-label {
+  background: #3e215d;
+}
+
+.section-news .news-list-wrap .news-list .news-label.heal-label {
+  background: #43695c;
 }
 
 .section-news .news-list-wrap .news-list .news-info {
