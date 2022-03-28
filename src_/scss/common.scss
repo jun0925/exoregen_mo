@@ -97,7 +97,8 @@ header {
         margin-bottom: 25px;
 
         .nav-list {
-            margin: 0 45px;
+            margin: 0 25px;
+
             & > li  {
                 margin-bottom: 30px;
                 &:last-child {margin-bottom: 0;}
@@ -142,13 +143,13 @@ header {
     }
 
     .link-label-wrap {
-        margin: 0 45px 25px;
+        margin: 0 25px 25px;
         font-size: 0;
     }
 
     .btn-wrap {
         @include flex(center,null) {
-            margin: 0 $margin45px;
+            margin: 0 25px;
         };
         .btn {
             @include squareBtn($black);
@@ -880,14 +881,6 @@ footer {
         .f {
             margin: 0 25px;
         }   
-    }
-
-    .nav-box nav .nav-list {
-        margin: 0 25px;
-    }
-
-    .nav-box .btn-wrap {
-        margin: 0 25px;
     }
 
     //.tab-outer {
