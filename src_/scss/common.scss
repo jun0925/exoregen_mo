@@ -141,6 +141,11 @@ header {
         }
     }
 
+    .link-label-wrap {
+        margin: 0 45px 25px;
+        font-size: 0;
+    }
+
     .btn-wrap {
         @include flex(center,null) {
             margin: 0 $margin45px;
