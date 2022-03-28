@@ -8324,7 +8324,6 @@ label[for="allAgree"] .label-txt {
 /** ..._ep-plan.scss **/
 /**** footer ****/
 footer {
-  overflow: hidden;
   position: relative;
 }
 
@@ -8455,6 +8454,7 @@ footer .awards-logo-swiper-wrap {
 
 footer .awards-logo-swiper-wrap .award-logo-swiper {
   padding: 23px 20px;
+  background: #fff;
 }
 
 footer .awards-logo-swiper-wrap .award-logo-swiper .swiper-wrapper {

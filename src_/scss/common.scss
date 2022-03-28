@@ -529,7 +529,6 @@ header {
 /** ..._ep-plan.scss **/
 /**** footer ****/
 footer {
-    overflow: hidden;
     position: relative;
 
     .counseling {
@@ -625,9 +624,10 @@ footer {
 
     .awards-logo-swiper-wrap {
         box-shadow: 10px 2px 17px #ccc;
-
+        
         .award-logo-swiper {
             padding: 23px 20px;
+            background: $white;
 
             .swiper-wrapper {
                 align-items: center;
