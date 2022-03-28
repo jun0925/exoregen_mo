@@ -52,8 +52,8 @@ $(function () {
     });
 
     var awardLogoSwiper = new Swiper(".award-logo-swiper", {
-        slidesPerView: 4.5,
-        spaceBetween: 37,
+        slidesPerView: 4,
+        spaceBetween: 30,
         autoplay: {
             delay: 3000,
             disableOnInteraction: false,
