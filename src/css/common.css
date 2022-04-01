@@ -6005,11 +6005,9 @@ header.reset .menu-btn div {
 }
 
 .section-awards .awards-list > li .award-info .awards-detail-swiper .swiper-slide {
-  width: auto;
-}
-
-.section-awards .awards-list > li .award-info .awards-detail-swiper .swiper-slide img {
-  width: auto;
+  max-width: 120px;
+  max-height: 91px;
+  overflow: hidden;
 }
 
 .section-awards .awards-list > li .award-info .awards-detail-swiper.no-swiper .swiper-wrapper {

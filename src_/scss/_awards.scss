@@ -49,11 +49,10 @@
                     padding: 0 10px;
 
                     .swiper-slide {
-                        width: auto;
-                        
-                        img {
-                            width: auto;
-                        }
+                        max-width: 120px;
+                        max-height: 91px;
+                        overflow: hidden;
+                    
                     }
 
                     &.no-swiper {
