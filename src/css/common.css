@@ -441,7 +441,7 @@ header.reset .menu-btn div {
   font-size: 1.5rem;
   font-weight: 300;
   display: block;
-  margin-bottom: 20px;
+  margin-bottom: 15px;
 }
 
 .layer-wrap .layer-box .layer-cont .form-cont label.ib {
@@ -6740,7 +6740,7 @@ header.reset .menu-btn div {
   font-size: 1.5rem;
   font-weight: 300;
   display: block;
-  margin-bottom: 20px;
+  margin-bottom: 15px;
 }
 
 .question-page .section-question .qs-form-cont label.ib {
@@ -7498,7 +7498,7 @@ header.reset .menu-btn div {
   font-size: 1.5rem;
   font-weight: 300;
   display: block;
-  margin-bottom: 20px;
+  margin-bottom: 15px;
 }
 
 .join-page .join-cont .join-form label.ib {
@@ -8719,6 +8719,9 @@ footer .company-box .company-list ul a strong {
   }
   .layer-wrap .layer-box .layer-cont {
     padding: 15px 10px;
+  }
+  .event-layer .layer-box .layer-cont .form-cont label {
+    margin-bottom: 10px;
   }
   footer .counseling {
     padding: 55px 25px;
