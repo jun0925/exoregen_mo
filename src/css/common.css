@@ -1674,8 +1674,17 @@ header.reset .menu-btn div {
           box-sizing: border-box;
   border: 1px solid #000;
   width: 110px;
+  height: 150px;
   position: relative;
-  padding: 53px 0 44px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 #main .new-section5 #leaderSwiper .cont .leader-img {
@@ -1683,14 +1692,16 @@ header.reset .menu-btn div {
   top: -73px;
   left: 50%;
   width: 90%;
+  height: 0;
+  padding-bottom: calc(300 / 300 * 100%);
   border-radius: 50%;
   overflow: hidden;
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%);
-}
-
-#main .new-section5 #leaderSwiper .cont .leader-img img {
-  border-radius: 50%;
+  background-image: url(http://222.239.218.195:8110/myoffice/file/hof/file_3577_01.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top center;
 }
 
 #main .new-section5 #leaderSwiper .cont .leader-name {
@@ -1698,6 +1709,11 @@ header.reset .menu-btn div {
   font-weight: 600;
   line-height: 1.34;
   text-align: center;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 #main .new-section5 #leaderSwiper .cont .icon-box {
@@ -6200,16 +6216,30 @@ header.reset .menu-btn div {
   display: -ms-grid;
   display: grid;
       grid-template-areas: ". .";
-  grid-gap: 112px 15px;
+  grid-auto-columns: 48%;
+  grid-gap: 110px 15px;
   margin-top: 90px;
 }
 
 #news-page .section-hof .cont-wrap .best-leader {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   position: relative;
   border: 1px solid #000;
   background: #fff;
-  padding-top: 60px;
-  padding-bottom: 40px;
+  height: 30vh;
+  max-height: 215px;
 }
 
 #news-page .section-hof .cont-wrap .best-leader-img {
@@ -6218,25 +6248,34 @@ header.reset .menu-btn div {
   left: 50%;
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%);
-  width: 68%;
-}
-
-#news-page .section-hof .cont-wrap .best-leader-img img {
+  width: 65%;
+  height: 0;
+  padding-bottom: calc(300 / 300 * 62%);
+  background-image: url(http://222.239.218.195:8110/myoffice/file/hof/file_3577_01.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top center;
   border-radius: 50%;
+  overflow: hidden;
 }
 
 #news-page .section-hof .cont-wrap .best-leader-name {
   font-size: 1.8rem;
   font-weight: 600;
   text-align: center;
-  margin-bottom: 30px;
+  margin-bottom: 15px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  line-height: 1.2;
 }
 
 #news-page .section-hof .cont-wrap .best-leader-typho {
-  font-size: 1.2rem;
+  font-size: 1.4rem;
   font-weight: 300;
-  line-height: 1.33;
+  line-height: 1.4;
   margin-bottom: 8px;
+  text-align: center;
   display: -webkit-box;
   -webkit-line-clamp: 2;
   -webkit-box-orient: vertical;
@@ -6245,7 +6284,7 @@ header.reset .menu-btn div {
 }
 
 #news-page .section-hof .cont-wrap .best-leader-info {
-  font-size: 9px;
+  font-size: 1rem;
   font-weight: 300;
   text-align: center;
 }
@@ -6352,22 +6391,27 @@ header.reset .menu-btn div {
 
 #hof-detail .hof-detail-section .hof-cont-wrap .hof-img {
   width: 50%;
+  height: 0;
+  padding-bottom: calc(300 / 300 * 50%);
   margin: 0 auto;
   margin-bottom: 25px;
-}
-
-#hof-detail .hof-detail-section .hof-cont-wrap .hof-img img {
+  background-image: url(http://222.239.218.195:8110/myoffice/file/hof/file_3577_01.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top center;
+  overflow: hidden;
   border-radius: 50%;
 }
 
 #hof-detail .hof-detail-section .hof-cont-wrap .hof-greeting {
   font-size: 1.8rem;
-  line-height: 1.33;
+  line-height: 1.4;
   margin-bottom: 25px;
+  text-align: center;
 }
 
 #hof-detail .hof-detail-section .hof-cont-wrap .hof-num {
-  font-size: 9px;
+  font-size: 1.4rem;
   font-weight: 300;
   color: #959595;
   margin-bottom: 30px;
@@ -6406,7 +6450,7 @@ header.reset .menu-btn div {
 #hof-detail .hof-detail-section .hof-cont-wrap .hof-cont p {
   font-size: 1.5rem;
   font-weight: 300;
-  line-height: 1.4;
+  line-height: 1.6;
 }
 
 #hof-detail .hof-detail-section .hof-cont-wrap .hof-cont .sample {
@@ -6414,6 +6458,10 @@ header.reset .menu-btn div {
   height: 270px;
   background: #3d3d3d;
   margin: 25px 0;
+}
+
+#hof-detail .hof-detail-section .hof-cont-wrap .hof-cont img {
+  width: 100%;
 }
 
 #hof-detail .hof-detail-section .hof-cont-wrap .other-news-wrap {
@@ -7320,8 +7368,17 @@ header.reset .menu-btn div {
           box-sizing: border-box;
   border: 1px solid #000;
   width: 110px;
+  height: 150px;
   position: relative;
-  padding: 53px 0 44px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 #join01 .section-best-leader #leaderSwiper .cont .leader-img {
@@ -7329,14 +7386,16 @@ header.reset .menu-btn div {
   top: -73px;
   left: 50%;
   width: 90%;
+  height: 0;
+  padding-bottom: calc(300 / 300 * 100%);
   border-radius: 50%;
   overflow: hidden;
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%);
-}
-
-#join01 .section-best-leader #leaderSwiper .cont .leader-img img {
-  border-radius: 50%;
+  background-image: url(http://222.239.218.195:8110/myoffice/file/hof/file_3577_01.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top center;
 }
 
 #join01 .section-best-leader #leaderSwiper .cont .leader-name {
@@ -7344,6 +7403,11 @@ header.reset .menu-btn div {
   font-weight: 600;
   line-height: 1.34;
   text-align: center;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 #join01 .section-best-leader #leaderSwiper .cont .icon-box {

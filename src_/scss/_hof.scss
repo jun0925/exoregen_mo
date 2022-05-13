@@ -45,48 +45,60 @@
         .best-leader-list {
             display: grid;
             grid-template-areas: ". .";
-            grid-gap: 112px 15px;
+            grid-auto-columns: 48%;
+            grid-gap: 110px 15px;
             margin-top: 90px;
         }
 
         .best-leader {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
             position: relative;
             border: $border-black;
             background: $white;
-            padding: {
-                top: 60px;
-                bottom: 40px;
-            }
+            height: 30vh;
+            max-height: 215px;
 
             &-img {
                 @include position($t: -61px);
                 left: 50%;
                 transform: translateX(-50%);
-                width: 68%;
-
-                img {
-                    border-radius: 50%;
-                }
+                width: 65%;
+                height: 0;
+                padding-bottom: calc(300 / 300 * 62%);
+                background-image: url(http://222.239.218.195:8110/myoffice/file/hof/file_3577_01.jpg);
+                background-repeat: no-repeat;
+                background-size: cover;
+                background-position: top center;
+                border-radius: 50%;
+                overflow: hidden;
             }
 
             &-name {
                 font-size: 1.8rem;
                 font-weight: $fw-bold;
                 text-align: center;
-                margin-bottom: 30px;
+                margin-bottom: 15px;
+                white-space: nowrap;
+                overflow: hidden;
+                text-overflow: ellipsis;
+                line-height: 1.2;
             }
 
             &-typho {
-                font-size: 1.2rem;
-                font-weight: $fw-light;
-                line-height: 1.33;
+                font-size: 1.4rem;
+                font-weight: 300;
+                line-height: 1.4;
                 margin-bottom: 8px;
+                text-align: center;
                 @include overfTextVertical($lineClamp: 2);
             }
 
             &-info {
-                font-size: 9px;
-                font-weight: $fw-light;
+                font-size: 1rem;
+                font-weight: 300;
                 text-align: center;
             }
 
