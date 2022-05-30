@@ -169,6 +169,7 @@ $productSecWs: 115px;
             li {
                 border-bottom: 1px solid #eaeaea;
                 padding: 25px 0;
+                overflow: hidden;
                 
                 &:first-child {padding-top: 0;}
                 
@@ -266,9 +267,34 @@ $productSecWs: 115px;
 /* ...detail and delivery */
 
 /* other product */
+.recom-outer {
+    overflow: hidden;
+}
+
+#recomProdSwiper {
+    min-height: 395px;
+    padding-right: 40px;
+    overflow: visible;
+
+    .product {
+        @include products();
+        padding: 0 !important;
+        border: 0 !important;
+    }
+
+    .swiper-button-prev,
+    .swiper-button-next {
+        top: calc(100% - 54px);
+    }
+
+    .swiper-button-next {
+        right: 40px;
+    }
+}
+
 #otherProductList {
     margin: {
-        left: $margin45px;
+        left: 25px;
         bottom: $margin55px;
     }
     padding-right: $margin45px;

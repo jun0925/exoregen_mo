@@ -50,14 +50,27 @@ $(function () {
     });
 
     //detail toggle
-    var detailContList = document.querySelectorAll(".detail-list > li");
+    var detailContList = document.querySelectorAll(".detail-list .toggle-btn");
     for (var i = 0; i < detailContList.length; i++) {
         detailContList[i].onclick = function () {
-            this.classList.toggle("active");
+            this.parentNode.classList.toggle("active");
         }
     }
 
     //other product swiper 
+    var reComProdSwiper = new Swiper("#recomProdSwiper",{
+        slidesPerView: "auto",
+        spaceBetween: 20,
+        speed: 500,
+        loop: true,
+        observer: true,
+        observeParents: true,
+        navigation: {
+            nextEl: "#recomProdSwiper .swiper-button-next",
+            prevEl: "#recomProdSwiper .swiper-button-prev"
+        }
+    });
+
     var otherProductSwiper = new Swiper("#otherProductList", {
         slidesPerView: "auto",
         spaceBetween: 20,
@@ -65,8 +78,8 @@ $(function () {
         loop: true,
         centeredSlides: true,
         navigation: {
-            prevEl: ".swiper-button-prev",
-            nextEl: ".swiper-button-next"
+            prevEl: "#otherProductList .swiper-button-prev",
+            nextEl: "#otherProductList .swiper-button-next"
         },
     });
 });
