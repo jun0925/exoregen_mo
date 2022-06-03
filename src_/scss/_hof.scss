@@ -95,6 +95,7 @@
                 margin-bottom: 8px;
                 text-align: center;
                 @include overfTextVertical($lineClamp: 2);
+                padding: 0 5px;
             }
 
             &-info {

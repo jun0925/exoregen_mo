@@ -803,6 +803,7 @@ $opacity10 : 1;
                     text-align: center;
                     @include overfTextVertical($lineClamp: 2);
                     margin-bottom: 8px;
+                    padding: 0 7px;
                 }
 
                 &-info {

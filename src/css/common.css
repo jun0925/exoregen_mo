@@ -1728,6 +1728,7 @@ header.reset .menu-btn div {
   overflow: hidden;
   text-overflow: ellipsis;
   margin-bottom: 8px;
+  padding: 0 7px;
 }
 
 #main .new-section5 #leaderSwiper .cont .leader-info {
@@ -6368,6 +6369,7 @@ header.reset .menu-btn div {
   -webkit-box-orient: vertical;
   overflow: hidden;
   text-overflow: ellipsis;
+  padding: 0 5px;
 }
 
 #news-page .section-hof .cont-wrap .best-leader-info {
@@ -7509,6 +7511,7 @@ header.reset .menu-btn div {
   overflow: hidden;
   text-overflow: ellipsis;
   margin-bottom: 8px;
+  padding: 0 7px;
 }
 
 #join01 .section-best-leader #leaderSwiper .cont .leader-info {
