@@ -758,24 +758,23 @@ $opacity10 : 1;
             bottom: 30px;
         }
 
-        .swiper-slide {max-width: 110px;}
-        
         .cont {
             box-sizing: border-box;
             border: $border-black;
-            width: 110px;
-            height: 150px;
+            height: 30vh;
+            max-height: 215px;
             position: relative;
             display: flex;
+            flex-direction: column;
             align-items: center;
             justify-content: center;
 
             .leader {
                 &-img {
-                    @include position($t: -73px, $l: 50%) {
-                        width: 90%;
+                    @include position($t: -61px, $l: 50%) {
+                        width: 65%;
                         height: 0;
-                        padding-bottom: calc(300 / 300 * 100%);
+                        padding-bottom: calc(300 / 300 * 62%);
                         border-radius: 50%;
                         overflow: hidden;
                         transform: translateX(-50%);
@@ -794,7 +793,24 @@ $opacity10 : 1;
                     line-height: 1.34;
                     text-align: center;
                     @include overfTextVertical($lineClamp: 2);
+                    margin-bottom: 15px;
                 }
+
+                &-typho {
+                    font-size: 1.4rem;
+                    font-weight: $fw-light;
+                    line-height: 1.4;
+                    text-align: center;
+                    @include overfTextVertical($lineClamp: 2);
+                    margin-bottom: 8px;
+                }
+
+                &-info {
+                    font-size: 1rem;
+                    text-align: center;
+                    line-height: 1.2
+                }
+
             }
 
             .icon-box {

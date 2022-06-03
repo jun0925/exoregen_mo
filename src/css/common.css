@@ -1665,20 +1665,20 @@ header.reset .menu-btn div {
   margin-bottom: 30px;
 }
 
-#main .new-section5 #leaderSwiper .swiper-slide {
-  max-width: 110px;
-}
-
 #main .new-section5 #leaderSwiper .cont {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   border: 1px solid #000;
-  width: 110px;
-  height: 150px;
+  height: 30vh;
+  max-height: 215px;
   position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -1689,11 +1689,11 @@ header.reset .menu-btn div {
 
 #main .new-section5 #leaderSwiper .cont .leader-img {
   position: absolute;
-  top: -73px;
+  top: -61px;
   left: 50%;
-  width: 90%;
+  width: 65%;
   height: 0;
-  padding-bottom: calc(300 / 300 * 100%);
+  padding-bottom: calc(300 / 300 * 62%);
   border-radius: 50%;
   overflow: hidden;
   -webkit-transform: translateX(-50%);
@@ -1714,6 +1714,26 @@ header.reset .menu-btn div {
   -webkit-box-orient: vertical;
   overflow: hidden;
   text-overflow: ellipsis;
+  margin-bottom: 15px;
+}
+
+#main .new-section5 #leaderSwiper .cont .leader-typho {
+  font-size: 1.4rem;
+  font-weight: 300;
+  line-height: 1.4;
+  text-align: center;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  margin-bottom: 8px;
+}
+
+#main .new-section5 #leaderSwiper .cont .leader-info {
+  font-size: 1rem;
+  text-align: center;
+  line-height: 1.2;
 }
 
 #main .new-section5 #leaderSwiper .cont .icon-box {
@@ -7426,20 +7446,20 @@ header.reset .menu-btn div {
   margin-bottom: 30px;
 }
 
-#join01 .section-best-leader #leaderSwiper .swiper-slide {
-  max-width: 110px;
-}
-
 #join01 .section-best-leader #leaderSwiper .cont {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   border: 1px solid #000;
-  width: 110px;
-  height: 150px;
+  height: 30vh;
+  max-height: 215px;
   position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -7450,11 +7470,11 @@ header.reset .menu-btn div {
 
 #join01 .section-best-leader #leaderSwiper .cont .leader-img {
   position: absolute;
-  top: -73px;
+  top: -61px;
   left: 50%;
-  width: 90%;
+  width: 65%;
   height: 0;
-  padding-bottom: calc(300 / 300 * 100%);
+  padding-bottom: calc(300 / 300 * 62%);
   border-radius: 50%;
   overflow: hidden;
   -webkit-transform: translateX(-50%);
@@ -7475,6 +7495,26 @@ header.reset .menu-btn div {
   -webkit-box-orient: vertical;
   overflow: hidden;
   text-overflow: ellipsis;
+  margin-bottom: 15px;
+}
+
+#join01 .section-best-leader #leaderSwiper .cont .leader-typho {
+  font-size: 1.4rem;
+  font-weight: 300;
+  line-height: 1.4;
+  text-align: center;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  margin-bottom: 8px;
+}
+
+#join01 .section-best-leader #leaderSwiper .cont .leader-info {
+  font-size: 1rem;
+  text-align: center;
+  line-height: 1.2;
 }
 
 #join01 .section-best-leader #leaderSwiper .cont .icon-box {
