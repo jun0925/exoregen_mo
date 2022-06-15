@@ -252,3 +252,30 @@ $brandSecWs: 115px;
     }
 }
 /* ...spt 02*/
+
+/* spt 03 */
+.spt#supporters03 {
+    .celeb-main {
+        margin-bottom: 55px;
+        
+        .celeb-img-box {
+            &.logo-img {
+                text-align: center;
+                margin-bottom: 30px;
+                img {max-width: 50%;}
+            }
+        }
+
+        .celeb-txt-box {
+            margin-top: 33px;
+
+            p {
+                text-align: center;
+                font-size: 1.5rem;
+                font-weight: 300;
+                line-height: 1.4;
+            }
+        }
+    }
+}
+/* ...spt 03*/
