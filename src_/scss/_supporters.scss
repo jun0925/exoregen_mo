@@ -137,3 +137,118 @@ $brandSecWs: 115px;
 }
 
 /* ...spt 01 */
+
+/* spt 02 */
+.spt#supporters02 {
+    .influ-main {
+        background: url(/img_/spt/spt02/spt2-bg.jpg) no-repeat;
+        height: 350px;
+
+        .influ-subject {
+            padding: 55px 35px 0;
+            
+            p {
+                color: $white;
+                font-size: 1.5rem;
+                font-weight: $fw-light;
+                line-height: 1.6;
+                
+                span.big {
+                    font-size: 2rem;
+                    font-weight: $fw-bold;
+                }
+    
+                span.midium {
+                    font-size: 2rem;
+                    $font-weight: 400;
+                }
+
+                span:last-child {
+                    display: block;
+                    margin-top: 10px;
+                }
+            }
+        }
+    }
+
+    .influ-img-box {
+        padding: 0 25px;
+        position: relative;
+        top: -55px;
+    }
+
+    .influ-youtube-wrap {
+        margin-bottom: 45px;
+
+        .influ-youtube-thumb {
+            width: 100%;
+            height: 0;
+            padding-bottom: calc(268 / 570 * 100%);
+            background-size: cover;
+            background-position: center;
+            position: relative;
+
+            &:after {
+                content: "";      
+                display: block;
+                width: 50px;
+                height: 50px;
+                background: url(/img_/icon/video_btn_off.png) no-repeat;
+                background-size: 100%;
+                box-shadow: 2px 0 34px rgba(39, 24, 55, 0.6);
+                border-radius: 50%;
+                overflow: hidden;
+                @include position($t: 50%, $l: 50%);
+                transform: translate(-50%, -50%);
+            } 
+
+            &:before {
+                content: " ";
+                @include position($t: 0, $l: 0);
+                width: 100%;
+                height: 100%;
+                background: rgba(0, 0, 0, 0.6);
+            }
+        }
+
+        .influ-youtube-description {
+            font-size:  1.2rem;
+            padding: 8px 0;
+            text-align: center;
+            background: #eaeaea;
+        }
+    }
+
+    .section-list {
+        margin-bottom: $margin55px;
+        
+        .influ-list {
+            display: grid;
+            grid-template-areas: ". .";
+            grid-gap: 30px 20px;
+            grid-auto-columns: 47%;
+
+            .influ-thumb {
+                height: 0;
+                padding-bottom: calc(242 / 208 * 100%);
+                background-repeat: no-repeat;
+                background-position: top center;
+                background-size: cover;
+            }
+
+            .influ-info {
+                margin-top: 20px;
+                text-align: center;
+
+                .influ-name {
+                    font: {
+                        size: 1.5rem;
+                        weight: $fw-light;
+                    }
+                }
+            }
+        }
+
+    }
+}
+/* ...spt 02*/
