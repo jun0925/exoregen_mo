@@ -5,12 +5,12 @@ $(function () {
 
     //kobeas thumb swiper 
     var kobeasThumb = new Swiper(".kobeas-thumb-swiper",{
-        slidesPerView: 3.2,
+        slidesPerView: 3,
         watchSlidesProgress: true,
         watchSlidesVisibility: true,
         speed: 600,
     });
-
+    
     //kobeas Main Swiper
     var kobeasMainSwiper = new Swiper(".kobeas-main-swiper",{
         slidesPerView: 1,
