@@ -1706,15 +1706,21 @@ header.reset .menu-btn div { background: #000; }
 
 /* ...spt 02*/
 /* spt 03 */
-.spt#supporters03 .celeb-main { margin-bottom: 55px; }
+.spt#supporters03 { margin-bottom: 55px; }
 
-.spt#supporters03 .celeb-main .celeb-img-box.logo-img { text-align: center; margin-bottom: 30px; }
+.spt#supporters03 .celeb-main { background: url(/img_/spt/spt03/spt3-bg.jpg) no-repeat; height: 350px; }
 
-.spt#supporters03 .celeb-main .celeb-img-box.logo-img img { max-width: 50%; }
+.spt#supporters03 .celeb-main .celeb-subject { padding: 55px 35px 0; }
 
-.spt#supporters03 .celeb-main .celeb-txt-box { margin-top: 33px; }
+.spt#supporters03 .celeb-main .celeb-subject p { color: #fff; font-size: 1.5rem; font-weight: 300; line-height: 1.6; }
 
-.spt#supporters03 .celeb-main .celeb-txt-box p { text-align: center; font-size: 1.5rem; font-weight: 300; line-height: 1.4; }
+.spt#supporters03 .celeb-main .celeb-subject p span.big { font-size: 2rem; font-weight: 600; }
+
+.spt#supporters03 .celeb-main .celeb-subject p span.midium { font-size: 2rem; }
+
+.spt#supporters03 .celeb-main .celeb-subject p span:last-child { display: block; margin-top: 10px; }
+
+.spt#supporters03 .celeb-img-box { padding: 0 25px; position: relative; top: -55px; }
 
 /* ...spt 03*/
 /** ..._supporters.scss **/

@@ -255,27 +255,43 @@ $brandSecWs: 115px;
 
 /* spt 03 */
 .spt#supporters03 {
+    margin-bottom: 55px;
+    
     .celeb-main {
-        margin-bottom: 55px;
+        background: url(/img_/spt/spt03/spt3-bg.jpg) no-repeat;
+        height: 350px;
         
-        .celeb-img-box {
-            &.logo-img {
-                text-align: center;
-                margin-bottom: 30px;
-                img {max-width: 50%;}
-            }
-        }
-
-        .celeb-txt-box {
-            margin-top: 33px;
-
+        .celeb-subject {
+            padding: 55px 35px 0;
+            
             p {
-                text-align: center;
+                color: $white;
                 font-size: 1.5rem;
-                font-weight: 300;
-                line-height: 1.4;
+                font-weight: $fw-light;
+                line-height: 1.6;
+                
+                span.big {
+                    font-size: 2rem;
+                    font-weight: $fw-bold;
+                }
+    
+                span.midium {
+                    font-size: 2rem;
+                    $font-weight: 400;
+                }
+
+                span:last-child {
+                    display: block;
+                    margin-top: 10px;
+                }
             }
         }
+    }
+
+    .celeb-img-box {
+        padding: 0 25px;
+        position: relative;
+        top: -55px;
     }
 }
 /* ...spt 03*/
