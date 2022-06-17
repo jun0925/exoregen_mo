@@ -1712,7 +1712,7 @@ header.reset .menu-btn div { background: #000; }
 
 .spt#supporters03 .celeb-main .celeb-subject { padding: 55px 35px 0; }
 
-.spt#supporters03 .celeb-main .celeb-subject p { color: #fff; font-size: 1.5rem; font-weight: 300; line-height: 1.6; }
+.spt#supporters03 .celeb-main .celeb-subject p { color: #fff; font-size: 1.5rem; font-weight: 300; line-height: 1.6; word-break: keep-all; }
 
 .spt#supporters03 .celeb-main .celeb-subject p span.big { font-size: 2rem; font-weight: 600; }
 
