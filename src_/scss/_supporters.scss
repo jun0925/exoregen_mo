@@ -259,7 +259,7 @@ $brandSecWs: 115px;
     
     .celeb-main {
         background: url(/img_/spt/spt03/spt3-bg.jpg) no-repeat;
-        height: 350px;
+        height: 395px;
         
         .celeb-subject {
             padding: 55px 35px 0;
@@ -291,8 +291,11 @@ $brandSecWs: 115px;
 
     .celeb-img-box {
         padding: 0 25px;
-        position: relative;
-        top: -55px;
+        margin-top: -90px;
+    }
+
+    .celeb-banner {
+        margin-top: 50px;
     }
 }
 /* ...spt 03*/

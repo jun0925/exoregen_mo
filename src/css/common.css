@@ -1708,7 +1708,7 @@ header.reset .menu-btn div { background: #000; }
 /* spt 03 */
 .spt#supporters03 { margin-bottom: 55px; }
 
-.spt#supporters03 .celeb-main { background: url(/img_/spt/spt03/spt3-bg.jpg) no-repeat; height: 350px; }
+.spt#supporters03 .celeb-main { background: url(/img_/spt/spt03/spt3-bg.jpg) no-repeat; height: 395px; }
 
 .spt#supporters03 .celeb-main .celeb-subject { padding: 55px 35px 0; }
 
@@ -1720,7 +1720,9 @@ header.reset .menu-btn div { background: #000; }
 
 .spt#supporters03 .celeb-main .celeb-subject p span:last-child { display: block; margin-top: 10px; }
 
-.spt#supporters03 .celeb-img-box { padding: 0 25px; position: relative; top: -55px; }
+.spt#supporters03 .celeb-img-box { padding: 0 25px; margin-top: -90px; }
+
+.spt#supporters03 .celeb-banner { margin-top: 50px; }
 
 /* ...spt 03*/
 /** ..._supporters.scss **/
