@@ -114,10 +114,12 @@ $opacity10 : 1;
 
 @mixin sectionTopBg($url) {
     position: relative;
-    min-height: 270px;
+    height: 0;
     background-repeat: no-repeat;
-    background-size: 100% 100%;
+    background-size: cover;
     background-image: url($imgurl + $url);
+    background-position: center;
+    padding-bottom: calc(270 / 375 * 100%);
     margin-bottom: $margin55px;
 }
 

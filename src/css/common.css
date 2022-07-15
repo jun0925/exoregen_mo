@@ -569,7 +569,7 @@ header.reset .menu-btn div { background: #000; }
 /* section7 end */
 /** ..._main.scss **/
 /** _brand.scss**/
-.brand .top-bg { position: relative; min-height: 270px; background-repeat: no-repeat; background-size: 100% 100%; background-image: url("/img_/bg/brand-bg.jpg"); margin-bottom: 55px; }
+.brand .top-bg { position: relative; height: 0; background-repeat: no-repeat; background-size: cover; background-image: url("/img_/bg/brand-bg.jpg"); background-position: center; padding-bottom: calc(270 / 375 * 100%); margin-bottom: 55px; }
 
 .brand .top-bg-cont { position: absolute; top: 60%; left: 50%; -webkit-transform: translate(-50%, -50%); transform: translate(-50%, -50%); text-align: center; }
 
@@ -1100,7 +1100,7 @@ header.reset .menu-btn div { background: #000; }
 /** ..._brand.scss**/
 /** _prodcuts-list.scss **/
 /**** _products-list.scss ****/
-.pdt-list .top-bg { margin-bottom: 55px; position: relative; min-height: 270px; background-repeat: no-repeat; background-size: 100% 100%; background-image: url("/img_/bg/products-bg.jpg"); margin-bottom: 55px; }
+.pdt-list .top-bg { margin-bottom: 55px; position: relative; height: 0; background-repeat: no-repeat; background-size: cover; background-image: url("/img_/bg/products-bg.jpg"); background-position: center; padding-bottom: calc(270 / 375 * 100%); margin-bottom: 55px; }
 
 .pdt-list .top-bg-cont { position: absolute; top: 60%; left: 50%; -webkit-transform: translate(-50%, -50%); transform: translate(-50%, -50%); text-align: center; width: 100%; }
 
@@ -1294,7 +1294,7 @@ header.reset .menu-btn div { background: #000; }
 /** ..._prodcut-detail.scss **/
 /** _howtouse.scss **/
 /**** _howtouse.scss ****/
-.use .top-bg { position: relative; min-height: 270px; background-repeat: no-repeat; background-size: 100% 100%; background-image: url("/img_/bg/use-bg.jpg"); margin-bottom: 55px; }
+.use .top-bg { position: relative; height: 0; background-repeat: no-repeat; background-size: cover; background-image: url("/img_/bg/use-bg.jpg"); background-position: center; padding-bottom: calc(270 / 375 * 100%); margin-bottom: 55px; }
 
 .use .top-bg-cont { position: absolute; top: 60%; left: 50%; -webkit-transform: translate(-50%, -50%); transform: translate(-50%, -50%); text-align: center; }
 
@@ -1621,7 +1621,7 @@ header.reset .menu-btn div { background: #000; }
 
 .spt .tab-outer #tabSwiper .swiper-button-next { text-align: right; background: linear-gradient(150deg, rgba(255, 255, 255, 0.5), white); right: 0; padding-right: 10px; }
 
-.spt .top-bg { position: relative; min-height: 270px; background-repeat: no-repeat; background-size: 100% 100%; background-image: url("/img_/bg/spt-bg.jpg"); margin-bottom: 55px; }
+.spt .top-bg { position: relative; height: 0; background-repeat: no-repeat; background-size: cover; background-image: url("/img_/bg/spt-bg.jpg"); background-position: center; padding-bottom: calc(270 / 375 * 100%); margin-bottom: 55px; }
 
 .spt .top-bg-cont { position: absolute; top: 60%; left: 50%; -webkit-transform: translate(-50%, -50%); transform: translate(-50%, -50%); text-align: center; }
 
@@ -1835,7 +1835,7 @@ header.reset .menu-btn div { background: #000; }
 
 /** ..._supporters01-detail.scss **/
 /** _news.scss **/
-#news-page .top-bg { position: relative; min-height: 270px; background-repeat: no-repeat; background-size: 100% 100%; background-image: url("/img_/bg/news-li-bg.jpg"); margin-bottom: 55px; }
+#news-page .top-bg { position: relative; height: 0; background-repeat: no-repeat; background-size: cover; background-image: url("/img_/bg/news-li-bg.jpg"); background-position: center; padding-bottom: calc(270 / 375 * 100%); margin-bottom: 55px; }
 
 #news-page .top-bg-cont { position: absolute; top: 60%; left: 50%; -webkit-transform: translate(-50%, -50%); transform: translate(-50%, -50%); text-align: center; }
 
