@@ -217,17 +217,19 @@
         </article>
     </header>
     <!-------...HEADER------->
+
     <!-- intro video -->
-    <!--<div class="intro-wrap">
+    <div class="intro-wrap">
         <video src="/img_/landing/landing_intro.mp4" muted autoplay></video>
-    </div>-->
+    </div>
+    <!-- ..intro video -->
 
     <!------- MAIN ------->
     <main>
         <!-- intro-section -->
         <section class="intro-sec">
             <div class="intro-video-wrap">
-                <video src="/img_/landing/landing_vi2.mp4" muted autoplay playsinline></video>
+                <video src="/img_/landing/landing_vi2.mp4" muted playsinline></video>
             </div>
         </section>
         <!-- ...intro-section -->
@@ -1045,6 +1047,7 @@
             setTimeout(function(){
                 $(".intro-wrap").stop().fadeOut(300,function(){
                     $(this).remove();
+                    $(".intro-video-wrap video").get(0).play();
                 });
                 $("html,body").css("overflow","auto");
             },3500);
