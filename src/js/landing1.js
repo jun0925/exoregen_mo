@@ -66,6 +66,12 @@ $(function(){
         }
 
         movingText(".scr-txt > span");
+
+        if(scrY >= $(".buy-sec .link-btn-wrap").offset().top) {
+            $(".fixed-btn-wrap").addClass("open");
+        } else {
+            $(".fixed-btn-wrap").removeClass("open");
+        }
     }
 });
 //스크롤 액션 함수
