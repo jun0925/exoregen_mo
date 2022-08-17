@@ -2,6 +2,7 @@
 
 section {
     font-size: 0;
+    overflow: hidden;
 }
 
 .intro-wrap {
@@ -13,7 +14,7 @@ section {
     background: $black;
 
         video {
-            @include position($t: 0, $l: 120%);
+            @include position($t: 0, $l: 50%);
             transform: translateX(-50%);
         }
 }
@@ -45,12 +46,17 @@ section {
         width: 90%;
         margin: 0 auto 35px;
         padding: 58px 20px 40px;
+        opacity: 0;
+        transition: opacity 0.4s;
     }
 
     .pdt-info-txt-wrap {
         padding-bottom: calc(123 / 375 * 100%);
 
         .name-wrap {
+            opacity: 0;
+            transform: translateY(50px);
+            transition: all 0.4s;
 
             &::after {
                 content:"";
@@ -83,13 +89,23 @@ section {
             font-size: 1.3rem;
             font-weight: $fw-light;
             line-height: 1.4;
+            opacity: 0;
+            transform: translateY(50px);
+            transition: all 0.4s;
 
             span {font-weight: $fw-bold;}
         }
     }
 
     .pdt-video-wrap {
-        video {width: 100%;}
+        position: relative;
+        opacity: 0;
+        transform: scale(0.6);
+        transition: all 0.4s;
+
+        video {
+            width: 100%;
+        }
     }
 
     .pdt-video-thumb {
@@ -97,11 +113,12 @@ section {
         border: 1px solid #c680c1;
         width: 100%;
         height: 0;
-        padding-bottom: calc(340 / 592 * 100%);
+        padding-bottom: calc(335 / 592 * 100%);
         background-image: url(/img_/landing/sec2-vi-thumb.jpg);
         background-size: cover;
         background-position: center;
-        position: relative;
+        @include position($t: 0, $l: 0);
+        z-index: 1;
 
         &::after {
             content: "";
@@ -135,13 +152,17 @@ section {
     .point {
         padding: 20px;
         background-size: cover;
-
+        opacity: 0;
+        transition: all 0.4s;
+        
         &.left {
             background-image: url(/img_/landing/sec3-point-bg-left.jpg);
+            transform: translateX(-50px);
         }
 
         &.right {
             background-image: url(/img_/landing/sec3-point-bg-right.jpg);
+            transform: translateX(50px);
             
             .img-wrap {order:2;}
             .txt-wrap {
@@ -197,6 +218,9 @@ section {
     background-position: top;
     padding-bottom: calc(1190 / 750 * 100%);
     position: relative;
+    transform: scale(0.8);
+    opacity: 0;
+    transition: all 0.4s;
 
     .name-wrap {
         text-align: center;
@@ -300,7 +324,10 @@ section {
         }
 
         .use-tit-wrap {
-    
+            opacity: 0;
+            transform: translateY(50px);
+            transition: all 0.4s;
+
             &::after {
                 content: "";
                 display: block;
@@ -325,6 +352,10 @@ section {
         }
 
         .use-info-wrap {
+            opacity: 0;
+            transform: translateY(50px);
+            transition: all 0.4s;
+
             p {
                 font-size: 1.3rem;
                 font-weight: $fw-light;
@@ -343,29 +374,11 @@ section {
             margin-bottom: 32px;
 
             .img-box {
-                position: relative;
-
-                .img-num {
-                    font-size: 1.1rem;
-                    font-weight: $fw-bold;
-                    color: #eeca89;
-                    background: #46233f;
-                    border-radius: 50%;
-                    border: 1px solid #eeca89;
-                    width: 25px;
-                    height: 25px;
-                    display: flex;
-                    justify-content: center;
-                    align-items: center;
-                    @include position();
-                    transform: translate(-50%,-50%);
-
-                    &.num-1 { top: 50%; left: 28%; }
-                    &.num-2 { left: 18%; bottom: -12%;}
-                    &.num-3 { top: 64%; left: 64%;}
-                }
+                opacity: 0;
+                transform: scale(0.8);
+                transition: all 0.4s;
             }
-
+            
             .num-list {
                 display: flex;
                 justify-content: flex-end;
@@ -379,6 +392,11 @@ section {
                     gap: 5px;
                     font-size: 1.3rem;
                     color: $white;
+                    opacity: 0;
+                    transform: translateX(-15px);
+                    transition: all 0.6s;
+                    &:nth-child(2) {transition-delay: 0.3s;}
+                    &:nth-child(3) {transition-delay: 0.6s;}
                 }
 
                 span {
@@ -397,7 +415,15 @@ section {
         }
 
         .use-video-wrap {
-            padding: 0 20px;
+            margin: 0 20px;
+            position: relative;
+            opacity: 0;
+            transform: scale(0.6);
+            transition: all 0.4s;
+    
+            video {
+                width: 100%;
+            }
         }
 
         .use-video-thumb {
@@ -405,11 +431,12 @@ section {
             border: 1px solid #c680c1;
             width: 100%;
             height: 0;
-            padding-bottom: calc(340 / 595 * 100%);
+            padding-bottom: calc(335 / 595 * 100%);
             background-image: url(https://img.youtube.com/vi/MkBxwyK7Sho/0.jpg);
             background-size: cover;
             background-position: center;
-            position: relative;
+            @include position($t: 0, $l: 0);
+            z-index: 1;
 
             &::after {
                 content: "";
@@ -484,11 +511,13 @@ section {
                         margin-bottom: 9px;
                     }
 
-                    .percentage {
+                    & > span {
                         font-size: 2rem;
                         font-weight: $fw-bold;
                         color: #eeca89;
                         letter-spacing: 0;
+                        vertical-align: top;
+                        margin-left: 3px;
                     }
                 }
             }
@@ -553,10 +582,16 @@ section {
         }
 
         .tech {
-            display: flex;
+            display: grid;
+            grid-template-areas: ". .";
+            grid-auto-columns: 30% 68%;
             background: $white;
             box-shadow: 0 0 10px #999;
             padding: 10px;
+            gap: 10px;
+            transform: translateY(60px);
+            opacity: 0;
+            transition: all 0.4s;
 
             &:nth-child(2) {margin-bottom: 10px;}
 
@@ -564,9 +599,8 @@ section {
                 display: flex;
                 flex-direction: column;
                 justify-content: center;
-                width: 60%;
+                width: 100%;
                 margin-right: 10px;
-                max-width: 110px;
             }
 
             &-info-wrap {
@@ -742,4 +776,9 @@ section {
             border: 1px solid #2b1c28;
         }
     }
+}
+
+.ani-class {
+    opacity: 1 !important;
+    transform: none !important;
 }

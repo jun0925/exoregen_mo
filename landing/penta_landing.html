@@ -21,6 +21,7 @@
         <script src="/src/js/common.js?ver=220603" type="text/javascript"></script>
         <script src="/src/libs_/jquery.simplyscroll.min.js"></script>
         <link rel="stylesheet" href="/src/libs_/jquery.simplyscroll.css" />
+        <script src="/src/js/landing1.js"></script>
     </head>
 <body>
     <!-------HEADER------->
@@ -240,7 +241,7 @@
                 <div class="pdt-info-txt-wrap">
                     <div class="name-wrap">
                         <h2 class="pdt-name">펜타 엑소 래디언스 크림</h2>
-                        <p class="pdt-sub-name">PENTA EXO RA DIANCE CREAM</p>
+                        <p class="pdt-sub-name">PENTA EXO RADIANCE CREAM</p>
                     </div>
                     
                     <div class="info-wrap">
@@ -254,8 +255,8 @@
                 </div>
 
                 <div class="pdt-video-wrap">
-                    <div class="pdt-video-thumb"></div>
-                    <!--<video src="/img_/landing/pdt-cont-video.mp4" controlslist="nodownload" controls></video>-->
+                    <div class="pdt-video-thumb video-thumb"></div>
+                    <video src="/img_/landing/pdt-cont-video.mp4" controlslist="nodownload" controls loop muted></video>
                 </div>
             </div>
 
@@ -267,7 +268,7 @@
 
         <!-- point section -->
         <section class="point-sec">
-            <div class="point left">
+            <div class="point left" id="point1">
                 <div class="point-cont">
                     <div class="img-wrap">
                         <img src="/img_/landing/sec3-point1.png" alt="펜타 엑소 래디언스 크림 포인트2" />
@@ -285,7 +286,7 @@
                     </div>
                 </div>
             </div>
-            <div class="point right">
+            <div class="point right" id="point2">
                 <div class="point-cont">
                     <div class="img-wrap">
                         <img src="/img_/landing/sec3-point2.png" alt="펜타 엑소 래디언스 크림 포인트2" />
@@ -301,7 +302,7 @@
                     </div>
                 </div>
             </div>
-            <div class="point left">
+            <div class="point left" id="point3">
                 <div class="point-cont">
                     <div class="img-wrap">
                         <img src="/img_/landing/sec3-point3.png" alt="펜타 엑소 래디언스 크림 포인트3" />
@@ -368,9 +369,6 @@
 
                 <div class="use-img-cont-wrap">
                     <div class="img-box">
-                        <span class="img-num num-1">01</span>
-                        <span class="img-num num-2">02</span>
-                        <span class="img-num num-3">03</span>
                         <img src="/img_/landing/sec5-content1.png" alt="스패출러" />
                     </div>
 
@@ -391,7 +389,8 @@
                 </div>
                 
                 <div class="use-video-wrap">
-                    <div class="use-video-thumb"></div>
+                    <div class="use-video-thumb video-thumb"></div>
+                    <video src="/img_/landing/use-cont-video.mp4" controlslist="nodownload" controls></video>
                 </div>
             </div>
         </section>
@@ -412,9 +411,10 @@
                         </div>
                         <div class="per-desc">
                             <h3 class="percentage-tit">눈가 주름 개선율</h3>
-                            <p class="percentage">
-                                13.43%
-                            </p>
+                            <span class="percentage odometer" id="percentage1">
+                                0
+                            </span>
+                            <span>%</span>
                         </div>
                     </li>
                     <li>
@@ -423,9 +423,10 @@
                         </div>
                         <div class="per-desc">
                             <h3 class="percentage-tit">피부 수분함량</h3>
-                            <p class="percentage">
-                                16.72%
-                            </p>
+                            <span class="percentage odometer" id="percentage2">
+                                0
+                            </span>
+                            <span>%</span>
                         </div>
                     </li>
                     <li>
@@ -434,9 +435,10 @@
                         </div>
                         <div class="per-desc">
                             <h3 class="percentage-tit">표피 탄력 개선율</h3>
-                            <p class="percentage">
-                                21.08%
-                            </p>
+                            <span class="percentage odometer" id="percentage3">
+                                0
+                            </span>
+                            <span>%</span>
                         </div>
                     </li>
                 </ul>
@@ -467,7 +469,7 @@
 
             <div class="tech-cont">
                 <p>※ 원료적 효능에 한함</p>
-                <div class="tech">
+                <div class="tech" id="tech1">
                     <div class="tech-img-wrap">
                         <img src="/img_/brand/brand04/7.jpg" alt="ReDer-Max">
                     </div>
@@ -480,10 +482,10 @@
                                 비피도박테리움 속 GFC-B09 균주 및 이를 이용하는 제조된 발효물
                             </p>
                         </div>
-                        <a href="#none" target="_blank">특허증 자세히 보기 +</a>
+                        <a href="/brand04.html" target="_blank">특허증 자세히 보기 +</a>
                     </div>
                 </div>
-                <div class="tech">
+                <div class="tech" id="tech2">
                     <div class="tech-img-wrap">
                         <img src="/img_/brand/brand04/3.jpg" alt="나노겔 에멀전">
                     </div>
@@ -496,7 +498,7 @@
                                 다중층 나노겔 에멀젼을 함유한 세라마이드 안정화 화장료 조성물 및 다중층 나노겔 에멀젼의 제조방법
                             </p>
                         </div>
-                        <a href="#none" target="_blank">특허증 자세히 보기 +</a>
+                        <a href="/brand04.html" target="_blank">특허증 자세히 보기 +</a>
                     </div>
                 </div>
             </div>
@@ -1038,32 +1040,5 @@
         </div>
     </footer>
     <!-------...FOOTER------->
-
-    <script>
-        $(function(){
-            $("html,body").css("overflow","hidden");
-
-            //3.5초후 intro 영역 제거
-            setTimeout(function(){
-                $(".intro-wrap").stop().fadeOut(300,function(){
-                    $(this).remove();
-                    $(".intro-video-wrap video").get(0).play();
-                });
-                $("html,body").css("overflow","auto");
-            },3500);
-
-            //리뷰 스와이퍼
-            const reviewSwiper = new Swiper("#reviewSwiper",{
-                slidesPerView: 2,
-                spaceBetween: 10,
-                loop: true,
-            });
-
-            // 라운드 이미지 flow
-            $("#loungeList").simplyScroll({
-                pauseButton: true,
-            });
-        });
-    </script>
 </body>
 </html>
