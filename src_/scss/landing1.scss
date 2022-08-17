@@ -135,7 +135,9 @@ section {
     }
 
     .scr-txt {
+        position: relative;
         span {
+            @include position($l: -300px);
             font-size: 2.5rem;
             font-weight: 200;
             color: #b985ff;

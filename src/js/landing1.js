@@ -55,8 +55,6 @@ $(function(){
     window.onscroll = function() {
         const scrY = window.scrollY;
         const percentTop = $(".per-list").offset().top - 500;
-        console.log(scrY);
-        console.log(percentTop);
         if(scrY >= percentTop) {
             const per1 = document.getElementById("percentage1");
             const per2 = document.getElementById("percentage2");
@@ -65,8 +63,9 @@ $(function(){
             per1.innerHTML = "13.43";
             per2.innerHTML = "16.72";
             per3.innerHTML = "21.08";
-
         }
+
+        movingText(".scr-txt > span");
     }
 });
 //스크롤 액션 함수
@@ -85,4 +84,25 @@ function scrEffect(target, aniClass, subTarget) {
             $(target).addClass(aniClass);
         }
     });
+}
+
+//스크롤 값에 따라 좌우로 움직이는 텍스트
+function movingText(el) {
+    var scrY = window.pageYOffset || window.scrollY;
+    var operator;
+    var divisionVal = 4;
+    
+    if ($(el).hasClass("left_move")) {
+        operator = "-";
+        scrY = window.pageYOffset / divisionVal;
+    } else {
+        operator = "+";
+        scrY = window.pageYOffset / divisionVal;
+    }
+
+    if (scrY <= $(".scr-txt").position().top) {
+        $(el).css({
+            transform: "translate3d(" + operator + scrY + "px, 0px, 0px)"
+        });
+    }
 }

@@ -143,7 +143,12 @@ section {
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
 }
+.pdt-info-sec .scr-txt {
+  position: relative;
+}
 .pdt-info-sec .scr-txt span {
+  position: absolute;
+  left: -300px;
   font-size: 2.5rem;
   font-weight: 200;
   color: #b985ff;
