@@ -35,7 +35,7 @@ $(function(){
     });
     
     const aniClass ="ani-class";
-    //scrEffect(".pdt-info-box", aniClass);
+    scrEffect(".pdt-info-box", aniClass);
     scrEffect(".pdt-info-box .name-wrap", aniClass);
     scrEffect(".pdt-info-box .info-wrap", aniClass);
     scrEffect(".pdt-info-box .pdt-video-wrap", aniClass);
