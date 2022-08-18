@@ -8,10 +8,16 @@ $(function(){
     $("html,body").css("overflow","hidden");
 
     //3.5초후 intro 영역 제거
+    const aniClass ="ani-class";
+
     setTimeout(function(){
         $(".intro-wrap").stop().fadeOut(300,function(){
             $(this).remove();
             $(".intro-video-wrap video").get(0).play();
+
+            setTimeout(function(){
+                $(".pdt-info-box").addClass(aniClass);
+            },500);
         });
         $("html,body").css("overflow","auto");
     },3500);
@@ -26,6 +32,7 @@ $(function(){
     // 라운드 이미지 flow
     $("#loungeList").simplyScroll({
         pauseButton: true,
+        speed: 1,
     });
 
     //비디오 썸네일 클릭시 재생
@@ -34,24 +41,20 @@ $(function(){
         $(this).remove();
     });
     
-    const aniClass ="ani-class";
-    scrEffect(".pdt-info-box", aniClass);
     scrEffect(".pdt-info-box .name-wrap", aniClass);
     scrEffect(".pdt-info-box .info-wrap", aniClass);
     scrEffect(".pdt-info-box .pdt-video-wrap", aniClass);
     scrEffect("#point1", aniClass);
     scrEffect("#point2", aniClass);
     scrEffect("#point3", aniClass);
-    scrEffect(".buy-sec", aniClass);
     scrEffect(".use-tit-wrap", aniClass);
     scrEffect(".use-info-wrap", aniClass)
-    scrEffect(".use-img-cont-wrap .img-box", aniClass);
     scrEffect(".use-img-cont-wrap .num-list li", aniClass);
     scrEffect(".use-video-wrap", aniClass);
     scrEffect("#tech1", aniClass);
     scrEffect("#tech2", aniClass);
 
-    //스크롤 영역 도달시 odometer 실행
+    //스크롤값에 따라 필요한 스크립트 실행.
     window.onscroll = function() {
         const scrY = window.scrollY;
         const percentTop = $(".per-list").offset().top - 500;
@@ -65,7 +68,26 @@ $(function(){
             per3.innerHTML = "21.08";
         }
 
-        movingText(".scr-txt > span");
+        if(scrY >= $(".pdt-info-txt-wrap").offset().top) {
+            $(".pdt-video-thumb").stop().fadeOut(200,function(){
+                $(this).remove();
+                $(".pdt-video-wrap video").get(0).play();
+            });
+        }
+
+        movingText(".scr-txt");
+
+        if(scrY >= $(".buy-sec .name-wrap").offset().top - 300) {
+            $(".buy-sec .pdt-name").addClass(aniClass);
+            $(".buy-sec .pdt-sub-name").addClass(aniClass);
+        }
+
+        if(scrY >= $(".buy-sec").offset().top) {
+            $(".buy-desc").addClass(aniClass);
+            $(".buy-detail").addClass(aniClass);
+            $(".buy-price").addClass(aniClass);
+            $(".buy-sec .link-btn-wrap").addClass(aniClass);
+        }
 
         if(scrY >= $(".buy-sec .link-btn-wrap").offset().top) {
             $(".fixed-btn-wrap").addClass("open");
@@ -108,7 +130,31 @@ function movingText(el) {
 
     if (scrY <= $(".scr-txt").position().top) {
         $(el).css({
-            transform: "translate3d(" + operator + scrY + "px, 0px, 0px)"
+            transform: `translate3d(${operator}${scrY}px, 0px, 0px)`
         });
     }
+}
+
+//특허증 이미지 팝업 함수
+var imgPopup = document.getElementById("imgPopup");
+var imgPopupBox = document.getElementById("imgPopupBox");
+var img = document.querySelector(".img-popup-box > .img-wrap > img");
+var htmlBody = document.querySelector("html,body");
+
+function imgOpen(imgSrc) {
+    $("#imgPopup").show();
+    $("html,body").css("overflowY","hidden");
+    setTimeout(function () {
+        $("#imgPopupBox").addClass("show");
+        $("#imgPopupBox > .img-wrap > img").attr("src",imgSrc);
+    }, 50);
+}
+
+function imgClose() {
+    $("#imgPopupBox").removeClass("show");
+    $("html,body").css("overflowY","auto");
+    setTimeout(function () {
+        $("#imgPopupBox > .img-wrap > img").attr("src","");
+        $("#imgPopup").css("display","none");
+    }, 300);
 }

@@ -233,42 +233,45 @@
         <section class="intro-sec">
             <div class="intro-video-wrap">
                 <video muted playsinline>
-                    <source src="/img_/landing/landing_vi3.mp4" type="video/mp4" />
+                    <source src="/img_/landing/landing_vi5.mp4" type="video/mp4" />
                 </video>
+            </div>
+            <div class="intro-pdt-wrap">
+                <div class="pdt-info-box">
+                    <div class="pdt-info-txt-wrap">
+                        <div class="name-wrap">
+                            <h2 class="pdt-name">펜타 엑소 래디언스 크림</h2>
+                            <p class="pdt-sub-name">PENTA EXO RADIANCE CREAM</p>
+                        </div>
+                        
+                        <div class="info-wrap">
+                            <p>
+                                <span>수분, 영양, 실키함</span>을 <br />
+                                동시에 구현한 <br />
+                                다이나믹한 텍스처의 <br />
+                                피부 결 개선 영양크림
+                            </p>
+                        </div>
+                    </div>
+        
+                    <div class="pdt-video-wrap">
+                        <div class="pdt-video-thumb video-thumb"></div>
+                        <video src="/img_/landing/pdt-cont-video.mp4" loop muted playsinline></video>
+                    </div>
+                </div>
+        
+                <div class="scr-txt left_move">
+                    <span>#미백 #주름개선 #2중 기능성 화장품</span>
+                    <span>#미백 #주름개선 #2중 기능성 화장품</span>
+                    <span>#미백 #주름개선 #2중 기능성 화장품</span>
+                    <span>#미백 #주름개선 #2중 기능성 화장품</span>
+                    <span>#미백 #주름개선 #2중 기능성 화장품</span>
+                    <span>#미백 #주름개선 #2중 기능성 화장품</span>
+                    <span>#미백 #주름개선 #2중 기능성 화장품</span>
+                </div>
             </div>
         </section>
         <!-- ...intro-section -->
-
-        <!-- pdt section -->
-        <section class="pdt-info-sec">
-            <div class="pdt-info-box">
-                <div class="pdt-info-txt-wrap">
-                    <div class="name-wrap">
-                        <h2 class="pdt-name">펜타 엑소 래디언스 크림</h2>
-                        <p class="pdt-sub-name">PENTA EXO RADIANCE CREAM</p>
-                    </div>
-                    
-                    <div class="info-wrap">
-                        <p>
-                            <span>수분, 영양, 실키함</span>을 <br />
-                            동시에 구현한 <br />
-                            다이나믹한 텍스처의 <br />
-                            피부 결 개선 영양크림
-                        </p>
-                    </div>
-                </div>
-
-                <div class="pdt-video-wrap">
-                    <div class="pdt-video-thumb video-thumb"></div>
-                    <video src="/img_/landing/pdt-cont-video.mp4" controlslist="nodownload" controls loop muted></video>
-                </div>
-            </div>
-
-            <div class="scr-txt">
-                <span>#미백 #주름개선 #2중 기능성 화장품 #미백 #주름개선 #2중 기능성 화장품 #미백 #주름개선 #2중 기능성 화장품 #미백 #주름개선 #2중 기능성 화장품 #미백 #주름개선 #2중 기능성 화장품 #미백 #주름개선 #2중 기능성 화장품 #미백 #주름개선 #2중 기능성 화장품 #미백 #주름개선 #2중 기능성 화장품 #미백 #주름개선 #2중 기능성 화장품</span>
-            </div>
-        </section>
-        <!-- ...pdt section -->
 
         <!-- point section -->
         <section class="point-sec">
@@ -486,7 +489,7 @@
                                 비피도박테리움 속 GFC-B09 균주 및 이를 이용하는 제조된 발효물
                             </p>
                         </div>
-                        <a href="/brand04.html" target="_blank">특허증 자세히 보기 +</a>
+                        <a href="javascript:void(0)" onclick="imgOpen('/img_/brand/brand04/7.jpg')">특허증 자세히 보기 +</a>
                     </div>
                 </div>
                 <div class="tech" id="tech2">
@@ -502,7 +505,7 @@
                                 다중층 나노겔 에멀젼을 함유한 세라마이드 안정화 화장료 조성물 및 다중층 나노겔 에멀젼의 제조방법
                             </p>
                         </div>
-                        <a href="/brand04.html" target="_blank">특허증 자세히 보기 +</a>
+                        <a href="javascript:void(0)" onclick="imgOpen('/img_/brand/brand04/3.jpg')">특허증 자세히 보기 +</a>
                     </div>
                 </div>
             </div>
@@ -598,6 +601,19 @@
             <a href="https://www.exoregen.kr/myoffice/os.do" id="fix-buyBtn">구매하기</a>
         </div>
         <!-- ...fixed -->
+
+        <!-- img popup -->
+        <div class="img-popup" id="imgPopup">
+            <div class="img-popup-box" id="imgPopupBox">
+                <div class="close-btn" onclick="imgClose()">
+                    <img src="/img_/icon/close-btn.png" alt="닫기">
+                </div>
+                <div class="img-wrap">
+                    <img src="">
+                </div>
+            </div>
+        </div>
+        <!-- ..img popup -->
     </main>
     <!------...MAIN ------>
     <!-------FOOTER------->
