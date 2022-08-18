@@ -131,7 +131,7 @@ section {
     }
 
     .scr-txt {
-        @include position($l: 20px);
+        padding-left: 20px;
         transition: transform 0.9s;
         white-space: nowrap;
 

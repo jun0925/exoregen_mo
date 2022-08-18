@@ -139,8 +139,7 @@ section {
           transform: translate(-50%, -50%);
 }
 .intro-sec .scr-txt {
-  position: absolute;
-  left: 20px;
+  padding-left: 20px;
   -webkit-transition: -webkit-transform 0.9s;
   transition: -webkit-transform 0.9s;
   transition: transform 0.9s;
