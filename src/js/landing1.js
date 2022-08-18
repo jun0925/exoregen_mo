@@ -41,8 +41,8 @@ $(function(){
         $(this).remove();
     });
     
-    scrEffect(".pdt-info-box .name-wrap", aniClass);
-    scrEffect(".pdt-info-box .info-wrap", aniClass);
+    scrEffect(".pdt-info-box .name-wrap", aniClass, ".pdt-info-box");
+    scrEffect(".pdt-info-box .info-wrap", aniClass, ".pdt-info-box");
     scrEffect(".pdt-info-box .pdt-video-wrap", aniClass);
     scrEffect("#point1", aniClass);
     scrEffect("#point2", aniClass);
@@ -82,7 +82,7 @@ $(function(){
             $(".buy-sec .pdt-sub-name").addClass(aniClass);
         }
 
-        if(scrY >= $(".buy-sec").offset().top) {
+        if(scrY >= $(".buy-sec").offset().top - 100) {
             $(".buy-desc").addClass(aniClass);
             $(".buy-detail").addClass(aniClass);
             $(".buy-price").addClass(aniClass);
@@ -100,7 +100,7 @@ $(function(){
 function scrEffect(target, aniClass, subTarget) {
     let target2Top = target || subTarget;
     let vh;
-    let contentTop = $(target2Top).position().top + 200;
+    let contentTop = $(target2Top).offset().top + 100;
 
     $(window).on("resize",function(){
         vh = innerHeight;
