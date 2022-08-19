@@ -9,7 +9,7 @@ header {
   width: 100%;
   position: fixed;
   top: 0;
-  z-index: 1000;
+  z-index: 10000;
   -webkit-transition: 0.3s;
   transition: 0.3s;
   max-width: 750px;
