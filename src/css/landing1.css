@@ -139,7 +139,7 @@ section {
           transform: translate(-50%, -50%);
 }
 .intro-sec .scr-txt {
-  padding-left: 20px;
+  padding-left: 50vw;
   -webkit-transition: -webkit-transform 0.9s;
   transition: -webkit-transform 0.9s;
   transition: transform 0.9s;
@@ -229,45 +229,43 @@ section {
 
 .buy-sec {
   background-image: url(/img_/landing/sec4-bg.jpg);
-  background-size: cover;
+  background-size: 100%;
   background-position: top;
-  padding-bottom: 133.3333333333%;
+  background-repeat: no-repeat;
+  padding-bottom: 55px;
   position: relative;
 }
 .buy-sec .name-wrap {
   text-align: center;
   padding-top: 50px;
+  opacity: 0;
+  -webkit-transform: translateY(80px);
+          transform: translateY(80px);
+  -webkit-transition: all 0.8s;
+  transition: all 0.8s;
 }
 .buy-sec .name-wrap .pdt-name {
   font-size: 2.5rem;
   margin-bottom: 15px;
-  opacity: 0;
-  -webkit-transform: translateY(80px);
-          transform: translateY(80px);
-  -webkit-transition: all 0.8s;
-  transition: all 0.8s;
 }
 .buy-sec .name-wrap .pdt-sub-name {
   font-size: 1.1rem;
   letter-spacing: 0;
-  opacity: 0;
-  -webkit-transform: translateY(80px);
-          transform: translateY(80px);
-  -webkit-transition: all 0.8s;
-  transition: all 0.8s;
-  -webkit-transition-delay: 0.4s;
-          transition-delay: 0.4s;
 }
 .buy-sec .buy-cont-wrap {
-  position: absolute;
-  top: 45%;
-  left: 50%;
-  -webkit-transform: translate(-50%, 50%);
-          transform: translate(-50%, 50%);
   width: 75%;
+  margin: 0 auto;
+  padding-top: 70%;
+  position: relative;
 }
 .buy-sec .buy-cont-wrap .buy-cont {
   text-align: center;
+  margin-bottom: 30px;
+  opacity: 0;
+  -webkit-transform: translateY(50px);
+          transform: translateY(50px);
+  -webkit-transition: all 0.8s;
+  transition: all 0.8s;
 }
 .buy-sec .buy-cont-wrap .buy-desc {
   font-size: 1.5rem;
@@ -275,11 +273,6 @@ section {
   color: #fff;
   line-height: 1.5;
   margin-bottom: 15px;
-  opacity: 0;
-  -webkit-transform: translateY(50px);
-          transform: translateY(50px);
-  -webkit-transition: all 0.8s;
-  transition: all 0.8s;
 }
 .buy-sec .buy-cont-wrap .buy-detail {
   padding: 10px 0;
@@ -287,13 +280,6 @@ section {
   border-left: 0;
   border-right: 0;
   margin-bottom: 15px;
-  opacity: 0;
-  -webkit-transform: translateY(50px);
-          transform: translateY(50px);
-  -webkit-transition: all 0.8s;
-  transition: all 0.8s;
-  -webkit-transition-delay: 0.4s;
-          transition-delay: 0.4s;
 }
 .buy-sec .buy-cont-wrap .buy-detail span {
   font-size: 1.3rem;
@@ -309,30 +295,28 @@ section {
   font-size: 2rem;
   font-weight: 500;
   letter-spacing: 0;
-  margin-bottom: 30px;
-  opacity: 0;
-  -webkit-transform: translateY(50px);
-          transform: translateY(50px);
-  -webkit-transition: all 0.8s;
-  transition: all 0.8s;
-  -webkit-transition-delay: 0.8s;
-          transition-delay: 0.8s;
 }
-.buy-sec .buy-cont-wrap .link-btn-wrap {
+.buy-sec .link-btn-trigger {
+  position: relative;
+  margin-top: 75px;
+  width: 100%;
+  height: 45px;
+}
+.buy-sec .link-btn {
+  position: absolute;
+  top: -45px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   gap: 15px;
-  margin-top: 30px;
-  opacity: 0;
-  -webkit-transform: translateY(50px);
-          transform: translateY(50px);
   -webkit-transition: all 0.8s;
   transition: all 0.8s;
-  -webkit-transition-delay: 1.2s;
-          transition-delay: 1.2s;
+  width: 100%;
 }
-.buy-sec .buy-cont-wrap .link-btn-wrap a {
+.buy-sec .link-btn a {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   display: block;
@@ -341,14 +325,36 @@ section {
   width: 60%;
   margin: 0 auto;
   padding: 14px 0;
+  text-align: center;
+  -webkit-transition: 0.8s;
+  transition: 0.8s;
 }
-.buy-sec .buy-cont-wrap .link-btn-wrap a.detail-link {
+.buy-sec .link-btn a.detail-link {
   border: 1px solid #fff;
   color: #fff;
 }
-.buy-sec .buy-cont-wrap .link-btn-wrap a.buy-link {
+.buy-sec .link-btn a.buy-link {
   background: #fff;
   color: #2b1c28;
+}
+.buy-sec .link-btn.fixed-on {
+  position: fixed;
+  top: auto;
+  left: 0;
+  bottom: 0;
+  background: #fff;
+  -webkit-box-shadow: 0 0 15px #ccc;
+          box-shadow: 0 0 15px #ccc;
+  padding: 15px 20px;
+  z-index: 1000;
+}
+.buy-sec .link-btn.fixed-on a.detail-link {
+  color: #2b1c28;
+  border: 1px solid #2b1c28;
+}
+.buy-sec .link-btn.fixed-on a.buy-link {
+  background: #2b1c28;
+  color: #fff;
 }
 
 .use-sec {
@@ -471,16 +477,11 @@ section {
 .use-sec .use-box .use-video-wrap {
   margin: 0 20px;
   position: relative;
-  opacity: 0;
-  -webkit-transform: scale(0.9);
-          transform: scale(0.9);
-  -webkit-transition: all 1.2s;
-  transition: all 1.2s;
 }
 .use-sec .use-box .use-video-wrap video {
   width: 100%;
 }
-.use-sec .use-box .use-video-thumb {
+.use-sec .use-box .use-video-wrap .use-video-thumb {
   -webkit-box-shadow: 0 0 10px #c680c1;
           box-shadow: 0 0 10px #c680c1;
   border: 1px solid #c680c1;
@@ -495,7 +496,7 @@ section {
   left: 0;
   z-index: 1;
 }
-.use-sec .use-box .use-video-thumb::after {
+.use-sec .use-box .use-video-wrap .use-video-thumb::after {
   content: "";
   -webkit-box-shadow: 0 0 7px #000;
           box-shadow: 0 0 7px #000;
@@ -508,8 +509,16 @@ section {
   position: absolute;
   top: 50%;
   left: 50%;
+  -webkit-transform: translate(-50%, 35px);
+          transform: translate(-50%, 35px);
+  opacity: 0;
+  -webkit-transition: all 0.8s;
+  transition: all 0.8s;
+}
+.use-sec .use-box .use-video-wrap.ani-class .use-video-thumb::after {
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
+  opacity: 1;
 }
 
 .percent-sec {
@@ -778,42 +787,6 @@ section {
 .wtc-sec a span {
   font-weight: 300;
   margin-right: 3px;
-}
-
-.fixed-btn-wrap {
-  position: fixed;
-  left: 0;
-  bottom: -100%;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  gap: 13px;
-  padding: 15px 20px;
-  background: #fff;
-  width: 100%;
-  z-index: 1000;
-  -webkit-transition: bottom 0.3s;
-  transition: bottom 0.3s;
-}
-.fixed-btn-wrap.open {
-  bottom: 0;
-}
-.fixed-btn-wrap a {
-  font-size: 1.5rem;
-  font-weight: 600;
-  width: 100%;
-  text-align: center;
-  padding: 15px 0;
-}
-.fixed-btn-wrap a#fix-buyBtn {
-  background: #2b1c28;
-  color: #fff;
-}
-.fixed-btn-wrap a#fix-detailBtn {
-  color: #2b1c28;
-  border: 1px solid #2b1c28;
 }
 
 .ani-class {

@@ -2,7 +2,7 @@ $(function(){
     //새로고침시 스크롤 최상단
     setTimeout(function(){
         scrollTo(0,0)
-    },100);
+    },10);
 
     //최초 로드시 html,body overflow: hidden 처리
     $("html,body").css("overflow","hidden");
@@ -17,6 +17,13 @@ $(function(){
 
             setTimeout(function(){
                 $(".pdt-info-box").addClass(aniClass);
+                setTimeout(function(){
+                    $(".pdt-info-box .name-wrap").addClass(aniClass);
+                    setTimeout(function(){
+                        $(".pdt-info-box .info-wrap").addClass(aniClass);
+                    },350);
+                },350);
+                
             },500);
         });
         $("html,body").css("overflow","auto");
@@ -41,9 +48,8 @@ $(function(){
         $(this).remove();
     });
     
-    scrEffect(".pdt-info-box .name-wrap", aniClass, ".pdt-info-box");
-    scrEffect(".pdt-info-box .info-wrap", aniClass, ".pdt-info-box");
     scrEffect(".pdt-info-box .pdt-video-wrap", aniClass);
+    scrEffect(".buy-sec .name-wrap", aniClass);
     scrEffect("#point1", aniClass);
     scrEffect("#point2", aniClass);
     scrEffect("#point3", aniClass);
@@ -53,6 +59,25 @@ $(function(){
     scrEffect(".use-video-wrap", aniClass);
     scrEffect("#tech1", aniClass);
     scrEffect("#tech2", aniClass);
+
+    // 구매하기 버튼 효과 observe
+    const observeEl = document.getElementById('linkBtn2')
+    const triggerEl = document.querySelector('.link-btn-trigger')
+
+    const handler = (entries) => {
+        console.log(entries)
+        if (entries[0].isIntersecting) {
+            observeEl.classList.add('fixed-on')
+        } else {
+            observeEl.classList.remove('fixed-on')
+        }
+    }
+
+    const observer = new IntersectionObserver(handler,{
+        rootMargin: '500% 0px 0px 0px'
+    });
+    
+    observer.observe(triggerEl);
 
     //스크롤값에 따라 필요한 스크립트 실행.
     window.onscroll = function() {
@@ -68,7 +93,7 @@ $(function(){
             per3.innerHTML = "21.08";
         }
 
-        if(scrY >= $(".pdt-info-txt-wrap").offset().top) {
+        if(scrY >= $(".pdt-info-txt-wrap").offset().top - 250) {
             $(".pdt-video-thumb").stop().fadeOut(200,function(){
                 $(this).remove();
                 $(".pdt-video-wrap video").get(0).play();
@@ -77,30 +102,24 @@ $(function(){
 
         movingText(".scr-txt");
 
-        if(scrY >= $(".buy-sec .name-wrap").offset().top - 300) {
-            $(".buy-sec .pdt-name").addClass(aniClass);
-            $(".buy-sec .pdt-sub-name").addClass(aniClass);
-        }
-
-        if(scrY >= $(".buy-sec").offset().top - 100) {
-            $(".buy-desc").addClass(aniClass);
-            $(".buy-detail").addClass(aniClass);
-            $(".buy-price").addClass(aniClass);
-            $(".buy-sec .link-btn-wrap").addClass(aniClass);
-        }
-
-        if(scrY >= $(".buy-sec .link-btn-wrap").offset().top) {
-            $(".fixed-btn-wrap").addClass("open");
-        } else {
-            $(".fixed-btn-wrap").removeClass("open");
+        if(scrY >= $(".buy-sec").offset().top - 450) {
+            $(".buy-cont").addClass(aniClass);
         }
     }
+
+    //배경 클릭시 팝업 닫기
+    $("#imgPopup").on("click",imgClose);
+    
+    $("#imgPopup .img-wrap").on("click",function(e){
+        e.stopPropagation();
+    });
+
 });
 //스크롤 액션 함수
 function scrEffect(target, aniClass, subTarget) {
     let target2Top = target || subTarget;
     let vh;
-    let contentTop = $(target2Top).offset().top + 100;
+    let contentTop = $(target2Top).offset().top;
 
     $(window).on("resize",function(){
         vh = innerHeight;
