@@ -679,6 +679,55 @@ header.reset .menu-btn div {
 }
 
 /* section1 end */
+#main .season-section {
+  padding: 0 45px;
+  margin-bottom: 55px;
+}
+#main .season-section > a {
+  display: block;
+  background-image: url(/img_/season_img.jpg);
+  background-size: cover;
+  background-position: center;
+  padding-bottom: 81.9614711033%;
+  text-align: center;
+}
+#main .season-section > a h3 {
+  font-size: 2.4rem;
+  margin-bottom: 10px;
+  padding-top: 40px;
+  letter-spacing: 0;
+}
+#main .season-section > a p {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-size: 1.3rem;
+  color: #9c4392;
+  letter-spacing: 0;
+}
+#main .season-section > a p::before {
+  content: "";
+  display: inline-block;
+  width: 1px;
+  height: 11px;
+  background: #9c4392;
+  margin-right: 10px;
+}
+#main .season-section > a p::after {
+  content: "";
+  display: inline-block;
+  width: 1px;
+  height: 11px;
+  background: #9c4392;
+  margin-left: 10px;
+}
+
 /* section2 start */
 #main .section2 {
   margin-bottom: 55px;

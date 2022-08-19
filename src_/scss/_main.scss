@@ -84,6 +84,53 @@
 }
 /* section1 end */
 
+#main .season-section {
+    padding: 0 45px;
+    margin-bottom: 55px;
+    
+    & > a {
+        display: block;
+        background-image:url(/img_/season_img.jpg);
+        background-size: cover;
+        background-position: center;
+        padding-bottom: calc(468 / 571 * 100%);
+        text-align: center;
+
+        h3 {
+            font-size: 2.4rem;
+            margin-bottom: 10px;
+            padding-top: 40px;
+            letter-spacing: 0;
+        }
+
+        p {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.3rem;
+            color: #9c4392;
+            letter-spacing: 0;
+
+            &::before {
+                content: "";
+                display: inline-block;
+                width: 1px;
+                height: 11px;
+                background: #9c4392;
+                margin-right: 10px;
+            }
+
+            &::after {
+                content: "";
+                display: inline-block;
+                width: 1px;
+                height: 11px;
+                background: #9c4392;
+                margin-left: 10px;
+            }
+        }
+    }
+}
 /* section2 start */
 #main .section2 {
     margin-bottom: $margin55px;
