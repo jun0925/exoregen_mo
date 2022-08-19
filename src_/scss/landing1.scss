@@ -118,7 +118,7 @@ section {
 
         &::after {
             content: "";
-            box-shadow: 0 0 7px $black;
+            box-shadow: 4px 2px 5px rgba(0,0,0,0.6);
             border-radius: 50%;
             display: block;
             width: 45px;
@@ -473,7 +473,7 @@ section {
     
                 &::after {
                     content: "";
-                    box-shadow: 0 0 7px $black;
+                    box-shadow: 4px 2px 5px rgba(0,0,0,0.6);
                     border-radius: 50%;
                     display: block;
                     width: 45px;
@@ -630,7 +630,7 @@ section {
             grid-template-areas: ". .";
             grid-auto-columns: 30% 68%;
             background: $white;
-            box-shadow: 0 0 10px #999;
+            box-shadow: 0 0 16px #999;
             padding: 10px;
             gap: 10px;
             transform: translateY(60px);
