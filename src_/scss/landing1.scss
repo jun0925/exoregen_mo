@@ -738,6 +738,10 @@ section {
                 font-size: 1.1rem;
                 line-height: 1.4;
                 word-break: keep-all;
+                overflow: hidden;
+                display: -webkit-box;
+               -webkit-line-clamp: 8; 
+               -webkit-box-orient: vertical;
             }
         }
     }
