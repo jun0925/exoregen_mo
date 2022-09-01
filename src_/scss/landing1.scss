@@ -327,7 +327,7 @@ section {
 
         &.fixed-on {
             @include position($p: fixed, $t:auto, $l: 0, $b: 0);
-            background: $white;
+            background: rgba(255, 255, 255, 0.9);
             box-shadow: 0 0 15px #ccc;
             padding: 15px 20px;
             z-index: 1000;
@@ -336,6 +336,7 @@ section {
                 &.detail-link {
                     color: #2b1c28;
                     border: 1px solid #2b1c28;
+                    background: $white;
                 }
 
                 &.buy-link {

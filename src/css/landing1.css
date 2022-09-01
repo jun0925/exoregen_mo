@@ -342,7 +342,7 @@ section {
   top: auto;
   left: 0;
   bottom: 0;
-  background: #fff;
+  background: rgba(255, 255, 255, 0.9);
   -webkit-box-shadow: 0 0 15px #ccc;
           box-shadow: 0 0 15px #ccc;
   padding: 15px 20px;
@@ -351,6 +351,7 @@ section {
 .buy-sec .link-btn.fixed-on a.detail-link {
   color: #2b1c28;
   border: 1px solid #2b1c28;
+  background: #fff;
 }
 .buy-sec .link-btn.fixed-on a.buy-link {
   background: #2b1c28;
