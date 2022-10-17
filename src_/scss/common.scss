@@ -143,8 +143,10 @@ header {
     }
 
     .link-label-wrap {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
         margin: 0 25px 25px;
-        font-size: 0;
     }
 
     .btn-wrap {
