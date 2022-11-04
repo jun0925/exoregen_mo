@@ -111,15 +111,15 @@ $(function(){
             }
         });
         
-    });
-
-    $(".awards-tab .content-tab").on("click",function(){
-        $(this).addClass("active");
-        $(".awards-tab .content-tab").not($(this)).removeClass("active");
-
-        const $tabIdx = $(this).index();
-        $(".award-cont-wrap").hide();
-        $(".award-cont-wrap").eq($tabIdx).stop().fadeIn(600);
+        $(".awards-tab .content-tab").on("click",function(){
+            $(this).addClass("active");
+            $(".awards-tab .content-tab").not($(this)).removeClass("active");
+    
+            const $tabIdx = $(this).index();
+            $(".award-cont-wrap").hide();
+            $(".award-cont-wrap").eq($tabIdx).stop().fadeIn(600);
+            partyAwardsSwiper.slideTo(0);
+        });
     });
 
     // 헬시엑소 영역
