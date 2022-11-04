@@ -617,6 +617,9 @@ header.reset .menu-btn div {
 #main .section1 .swiper-container .swiper-slide.main-slide7 {
   background-image: url("/img_/mo_top_party_banner.jpg");
 }
+#main .section1 .swiper-container .swiper-slide.main-slide8 {
+  background-image: url("/img_/exo_suncream.jpg");
+}
 #main .section1 .swiper-container .swiper-slide .swiper-cont {
   position: absolute;
   top: 37%;
