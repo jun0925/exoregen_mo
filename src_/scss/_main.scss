@@ -26,7 +26,7 @@
             &.main-slide4 {background-image: url($imgurl + "main-sl4.jpg");}
             &.main-slide5 {background-image: url($imgurl + "main-sl5.jpg");}
             &.main-slide6 {background-image: url($imgurl + "main-sl6.jpg");}
-            &.main-slide7 {background-image: url($imgurl + "exo_suncream.jpg");}
+            &.main-slide7 {background-image: url($imgurl + "mo_top_party_banner.jpg");}
 
             .swiper-cont {
                 position: absolute;
@@ -43,6 +43,7 @@
                     font-size: 4rem;
                     line-height: 1.05;
                     margin-bottom: 26px;
+                    word-break: keep-all;
                 }
 
                 &-description {

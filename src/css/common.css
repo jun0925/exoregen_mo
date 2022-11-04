@@ -615,7 +615,7 @@ header.reset .menu-btn div {
   background-image: url("/img_/main-sl6.jpg");
 }
 #main .section1 .swiper-container .swiper-slide.main-slide7 {
-  background-image: url("/img_/exo_suncream.jpg");
+  background-image: url("/img_/mo_top_party_banner.jpg");
 }
 #main .section1 .swiper-container .swiper-slide .swiper-cont {
   position: absolute;
@@ -631,6 +631,7 @@ header.reset .menu-btn div {
   font-size: 4rem;
   line-height: 1.05;
   margin-bottom: 26px;
+  word-break: keep-all;
 }
 #main .section1 .swiper-container .swiper-slide .swiper-cont-description {
   font-size: 1.2rem;
