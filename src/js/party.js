@@ -1,8 +1,10 @@
 $(function(){
 
+    const thumbView = 3.23;
+
     //서브 비디오 js
     const subVideoSwiper = new Swiper("#partyVideoSwiper",{
-        slidesPerView: 4.3,
+        slidesPerView: thumbView,
         spaceBetween: 5,
     });
 
@@ -37,7 +39,7 @@ $(function(){
         $(this).next(".gallery-thumb").attr("id",`galleryThumb-${index}`);
         
         let gallerySubSwiper = new Swiper(`#galleryThumb-${index}`,{
-            slidesPerView: 3.23,
+            slidesPerView: thumbView,
             spaceBetween: 5,
             speed: 1000,
             observer: true,
