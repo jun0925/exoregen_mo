@@ -1447,12 +1447,12 @@
 .party-content2-section #partyAwardsTabSwiper .swiper-button-next {
   background: none;
   width: 50px;
-  height: 43px;
+  height: 32px;
   top: 55%;
   -webkit-transform: translateY(-50%);
           transform: translateY(-50%);
   margin-top: -6px;
-  opacity: 0.6;
+  opacity: 1;
 }
 .party-content2-section #partyAwardsTabSwiper .swiper-button-prev img,
 .party-content2-section #partyAwardsTabSwiper .swiper-button-next img {

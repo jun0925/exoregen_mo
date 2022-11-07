@@ -16,7 +16,7 @@ $(function(){
 
     // 파티 갤러리 관련 js
     const galTabSwiper = new Swiper ("#partyGalTabSwiper",{
-        slidesPerView: 2,
+        slidesPerView: 2.4,
         centeredSlides: true,
         navigation: {
             nextEl: "#partyGalTabSwiper .swiper-button-next",
@@ -66,7 +66,7 @@ $(function(){
 
     //시상식 관련 js
     const partyAwardsTab = new Swiper("#partyAwardsTabSwiper",{
-        slidesPerView: 2,
+        slidesPerView: 2.4,
         centeredSlides: true,
         navigation: {
             nextEl: "#partyAwardsTabSwiper .swiper-button-next",
