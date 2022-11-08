@@ -330,7 +330,6 @@
             #galleryThumb-7 {
                 .gal-cont#{$i} {
                     background-image: url("/img_/party/gallery7/#{$i}.jpg");
-                    background-size: contain;
                     background-color: $black;
                 }
             }
