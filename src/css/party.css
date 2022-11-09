@@ -240,7 +240,7 @@
   background-size: cover;
   background-repeat: no-repeat;
   width: 100%;
-  padding-bottom: 47.5%;
+  padding-bottom: 66.6666666667%;
 }
 .party-content1-section .party-gal-cont-box .gallery-thumb {
   -webkit-box-sizing: border-box;
@@ -250,7 +250,7 @@
 }
 .party-content1-section .party-gal-cont-box .gallery-thumb .swiper-slide {
   width: 100%;
-  height: 57.5px;
+  height: 78px;
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -1440,6 +1440,7 @@
 }
 .party-content2-section .award-cont-wrap {
   display: none;
+  padding-left: 20px;
 }
 .party-content2-section .award-cont-wrap:first-child {
   display: block;
