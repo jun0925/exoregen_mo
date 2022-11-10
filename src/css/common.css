@@ -1320,8 +1320,8 @@ header.reset .menu-btn div {
   position: relative;
   width: 100%;
   height: 0;
-  padding-bottom: 64.6376811594%;
-  background-size: 120%;
+  padding-bottom: 56.231884058%;
+  background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
 }
