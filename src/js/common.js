@@ -53,7 +53,7 @@ $(function () {
 
     var awardLogoSwiper = new Swiper(".award-logo-swiper", {
         slidesPerView: 4,
-        spaceBetween: 5,
+        spaceBetween: 8,
         autoplay: {
             delay: 3000,
             disableOnInteraction: false,
