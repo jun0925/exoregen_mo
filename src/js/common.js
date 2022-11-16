@@ -53,20 +53,12 @@ $(function () {
 
     var awardLogoSwiper = new Swiper(".award-logo-swiper", {
         slidesPerView: 4,
-        spaceBetween: 30,
+        spaceBetween: 5,
         autoplay: {
             delay: 3000,
             disableOnInteraction: false,
         },
         loop: true,
-        breakpoints: {
-            360: {
-                slidesPerView: 3.4,
-            },
-            320: {
-                slidesPerView: 2.7
-            },
-        },
     });
 
     //footer 계열사 콤보박스 기능
