@@ -28,52 +28,21 @@
         }
     }
 
-    .cont-tab-wrap {
-        margin-bottom: 40px;
-
-        .tab-list {
-            @include linkTab($tabMargin: 0);
-            border-bottom: $border-black;
-
-            li {
-                width: 50%;
-                text-align: center;
-            }
-
-            .tab {
-                display: block;
-                position: relative;
-                padding-bottom: 20px;
-
-                &:after {
-                    display: block;
-                    content: " ";
-                    width: 6px;
-                    height: 6px;
-                    background: $purple;
-                    border-radius: $circleRadius;
-
-                    @include position(absolute, null, 50%, -3px, null) {
-                        transform: translateX(-50%);
-                    }
-                }
-            }
-        }
-    }
+    @include tabSwiperStyle();
 
     .wtc-cont-wrap {
         .wtc-cont {
+            display: none;
             opacity: 0;
             transform: translateY(50px);
             transition: 0.3s;
 
             &.cont-show {
+                display: block;
                 transform: none;
                 opacity: 1;
             }
 
-            &#seoul {display: block;}
-            &#busan {display: none;}
         }
                 
         .wtc-info-wrap {
