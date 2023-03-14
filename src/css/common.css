@@ -7462,6 +7462,9 @@ label[for=allAgree] .label-txt {
           transform: none;
   opacity: 1;
 }
+#wtc .wtc-section .wtc-cont-wrap .wtc-cont#seoul {
+  display: block;
+}
 #wtc .wtc-section .wtc-cont-wrap .wtc-info-wrap {
   margin-bottom: 45px;
   padding: 0 15px;
