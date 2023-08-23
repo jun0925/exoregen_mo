@@ -172,7 +172,7 @@
   overflow: visible;
 }
 .party-content1-section .party-gal-cont-box #partyGalTabSwiper .content-tab {
-  width: "auto";
+  width: auto;
   font-size: 1.4rem;
   color: #9a9a9a;
   position: relative;
@@ -1404,7 +1404,7 @@
   overflow: visible;
 }
 .party-content2-section #partyAwardsTabSwiper .content-tab {
-  width: "auto";
+  width: auto;
   font-size: 1.4rem;
   color: #fff;
   position: relative;
