@@ -43,12 +43,12 @@
   width: 80%;
 }
 .party-banner-section .party-video-wrap video {
-  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 50%;
   height: 100%;
-  object-fit: cover;
-  -o-object-fit: cover;
-  object-position: center;
-  -o-object-position: center;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
 }
 
 .party-content1-section {
@@ -102,11 +102,9 @@
   width: 100%;
   height: 100%;
 }
-
-.party-content1-section #partyVideoSwiper {
+.party-content1-section .sub-video-box {
   padding-left: 25px;
 }
-
 .party-content1-section .sub-video-thumb {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -172,7 +170,7 @@
   overflow: visible;
 }
 .party-content1-section .party-gal-cont-box #partyGalTabSwiper .content-tab {
-  width: auto;
+  width: "auto";
   font-size: 1.4rem;
   color: #9a9a9a;
   position: relative;
@@ -243,7 +241,6 @@
   background-repeat: no-repeat;
   width: 100%;
   padding-bottom: 66.6666666667%;
-  position: relative;
 }
 .party-content1-section .party-gal-cont-box .gallery-thumb {
   -webkit-box-sizing: border-box;
@@ -258,19 +255,6 @@
   background-size: cover;
   background-repeat: no-repeat;
 }
-
-.party-content1-section .party-gal-cont-box .swiper-container .swiper-slide img {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  -o-object-fit: cover;
-  object-position: center;
-  -o-object-position: center;
-}
-
 .party-content1-section .party-gal-cont-box #galleryMain-0 .gal-cont0,
 .party-content1-section .party-gal-cont-box #galleryThumb-0 .gal-cont0 {
   background-image: url("/img_/party/gallery0/0.jpg");
@@ -1404,7 +1388,7 @@
   overflow: visible;
 }
 .party-content2-section #partyAwardsTabSwiper .content-tab {
-  width: auto;
+  width: "auto";
   font-size: 1.4rem;
   color: #fff;
   position: relative;
@@ -1489,7 +1473,6 @@
 }
 
 .h-exo-section {
-  display: none;
   background-image: url("/img_/party/h-exo/h-exo-bg.jpg");
   background-size: cover;
   padding: 60px 0;

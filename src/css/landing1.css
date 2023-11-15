@@ -14,11 +14,12 @@ section {
   background: #000;
 }
 .intro-wrap video {
-  position: absolute;
-  top: 0;
-  left: 120%;
-  -webkit-transform: translateX(-50%);
-          transform: translateX(-50%);
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
 }
 
 .intro-sec {
