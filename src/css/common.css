@@ -3749,7 +3749,7 @@ header.reset .menu-btn div {
   font-weight: 600;
 }
 #use .section-use02 .cont .cont-img {
-  padding-left: 10px;
+  padding: 0 10px;
 }
 
 /* ...howtouse02 */
