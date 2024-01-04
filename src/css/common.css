@@ -4281,6 +4281,7 @@ header.reset .menu-btn div {
 }
 #skinTest .section-test-result .result-product-box {
   text-align: center;
+  margin: 15px 0;
 }
 #skinTest .section-test-result .result-product-box img {
   max-width: 50%;
